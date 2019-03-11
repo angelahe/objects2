@@ -20,20 +20,6 @@ class Account {
         return this.balance;
     }
 
-    /*
-    deposit(amount) {
-        return math.sum(this.balance, amount);
-    }
-
-    withdraw(amount) {
-        return math.sub(this.balance, amount);
-    }
-
-    getbalance() {
-        return this.balance;
-    }
-    */
-
 }
 
 export default Account
