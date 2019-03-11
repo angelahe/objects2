@@ -20,8 +20,8 @@ const NavBar = (props) => {
             <header>
                 <img src={analytics} navbtn="default" onClick={handleClick} className="App-icon" alt="one"/>
                 <img src={creative} navbtn="math" onClick={handleClick} className="App-icon" alt="two"/>
-                <img src={leader} navbtn="leader" onClick={handleClick} className="App-icon" alt="three"/>
-                <img src={teamwork} navbtn="teamwork" onClick={handleClick} className="App-icon" alt="four"/>
+                <img src={leader} navbtn="account" onClick={handleClick} className="App-icon" alt="three"/>
+                <img src={teamwork} navbtn="accounts" onClick={handleClick} className="App-icon" alt="four"/>
                 <img src={teamwork2} navbtn="teamwork2" onClick={handleClick} className="App-icon" alt="five"/>
             </header>
             <p>{props.message}</p>

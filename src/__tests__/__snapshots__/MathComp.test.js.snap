@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MathComp renders correctly 1`] = `
+<div>
+  <h1>
+    Hello world from MathComp
+  </h1>
+  <input
+    id="operand1"
+    type="number"
+  />
+  <select
+    name="operator"
+  >
+    <option
+      value="plus"
+    >
+      +
+    </option>
+    <option
+      value="minus"
+    >
+      -
+    </option>
+    <option
+      value="times"
+    >
+      *
+    </option>
+    <option
+      value="divide"
+    >
+      /
+    </option>
+  </select>
+  <span>
+    
+  </span>
+  <input
+    id="operand2"
+    type="number"
+  />
+  <button
+    onClick={[Function]}
+  >
+    Calculate
+  </button>
+  <span
+    id="calcValue"
+  >
+    
+  </span>
+</div>
+`;

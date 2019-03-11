@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Starter from './components/Starter';
+import MathComp from './components/MathComp';
 import NavBar from './components/NavBar';
 
 class App extends Component {
@@ -23,8 +24,10 @@ class App extends Component {
 
             <div className="App">
                 <NavBar navClicked={this.onNavClickChanged}/>
-                {(this.state.navClicked==="default")? <Starter /> : null}
-                {(this.state.navClicked==="math")? <Starter /> : null}
+                {(this.state.navClicked==="default") ? <Starter /> : null}
+                {(this.state.navClicked==="math") ? <MathComp /> : null}
+                {(this.state.navClicked==="account") ? <Starter /> : null}
+                {(this.state.navClicked==="accounts") ? <Starter /> : null}
             </div>
         );
     }
