@@ -11,7 +11,15 @@ class MathComp extends React.Component {
         }
     }
 
-    handleCalculateClick = () => {
+    componentDidMount() {
+
+    }
+
+    componentWillUnmount() {
+
+    }
+
+    handleCalculateClick = (state) => {
         console.log("in handleCalculateClick");
         const input1 = Number(document.getElementById("operand1").value);
         const input2 = Number(document.getElementById("operand2").value);
@@ -20,7 +28,7 @@ class MathComp extends React.Component {
         console.log("operator is ", operator);
         switch (operator) {
             case "plus" :
-                this.setState({result : math.sum(input1, input2)});
+                this.setState((state) => ({result : math.sum(input1, input2)}));
                 break;
             case "minus" :
                 this.setState({result : math.sub(input1, input2)});
