@@ -14,7 +14,7 @@ it('renders without crashing', () => {
     shallow(<AccountUI />);
 });
 
-test('AccountUI renders correctly', () => {
+test('AccountsUI renders correctly', () => {
     const tree = renderer.create(<AccountUI />).toJSON();
     expect(tree).toMatchSnapshot();
 });

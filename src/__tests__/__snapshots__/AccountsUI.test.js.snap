@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AccountUI renders correctly 1`] = `
+exports[`AccountsUI renders correctly 1`] = `
 <div>
   <h1>
     Hello world from Account
@@ -20,24 +20,5 @@ exports[`AccountUI renders correctly 1`] = `
       Create Account
     </button>
   </div>
-</div>
-`;
-
-exports[`MathComp renders correctly 1`] = `
-<div>
-  <h1>
-    Hello world from Account
-  </h1>
-  <p>
-    My Account
-  </p>
-  <input
-    id="startBalance"
-    placeholder="Enter starting balance"
-    type="number"
-  />
-  <button>
-    Create Account
-  </button>
 </div>
 `;
