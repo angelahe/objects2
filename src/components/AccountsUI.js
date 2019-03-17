@@ -3,6 +3,7 @@ import Accounts from './accounts';
 import Account from './account';
 import AccountSummary from './AccountSummary';
 import AccountCreate from './AccountCreate';
+import AccountEdit from './AccountEdit';
 import AccountListItem from './AccountListItem';
 import addbtn from '../images/add_FFFFFF.png';
 
@@ -22,10 +23,10 @@ class AccountsUI extends React.Component {
             lowestAccount: "0",
             highestAccount: "0",
             totalAccount: "0",
-            addAccount: "false",
-            editShow: "false",
-            deleteShow: "false",
-            accountActionsShow: "false"
+            addAccount: false,
+            editShow: false,
+            deleteShow: false,
+            accountActionsShow: false
         }
     }
 
@@ -76,19 +77,45 @@ class AccountsUI extends React.Component {
     }
 
     onEditClick = (acctIndex) => {
-        console.log("in Edit Click", acctIndex)
+        console.log("in Edit Click", acctIndex);
+        console.log("editShow is ", this.state.editShow);
+        this.setState({
+            editShow: !this.state.editShow,
+            currentSelected: acctIndex
+        }, () => {
+            console.log("this.state.editshow is ", this.state.editShow);
+            console.log("this.state.acctindex is ", this.state.currentSelected);
+            this.updateSummary();
+        });
+
+    }
+
+    onAccountUpdate = (name, balance, index) => {
+        console.log("in account update with: ", name, balance, index);
+        const updateWithThis = new Account(balance, name, index);
+        const AccountListCopy = new Accounts();
+        const changeState = !this.state.editShow;
+
+        //make a copy of Accountlist, replacing the edited account
+        for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
+            if(i == index)
+                AccountListCopy.addAccount(updateWithThis);
+            else
+                AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
+        }
 
         this.setState({
-            editShow: "true",
-            currentSelected: acctIndex
-        })
-
+            AccountList: AccountListCopy,
+            editShow: changeState
+        }, () => {
+            this.updateSummary();
+        });
     }
 
     onDeleteClick = (acctIndex) => {
         console.log("in delete click", acctIndex)
         this.setState({
-            deleteShow: "true",
+            deleteShow: true,
             currentSelected: acctIndex
         })
     }
@@ -96,7 +123,7 @@ class AccountsUI extends React.Component {
     onAccountClick = (acctIndex) => {
         console.log("in account click", acctIndex);
         this.setState({
-            accountActionsShow: "true",
+            accountActionsShow: true,
             currentSelected: acctIndex
         })
     }
@@ -131,9 +158,16 @@ class AccountsUI extends React.Component {
                         </div>
                     </div>
                     <div className = "AccountPanel">
-                        {(!this.state.addAccount) ?
+                        {(this.state.addAccount) ?
                             <AccountCreate props = {this.state} createClicked = {this.onAccountCreate}/>
                             : null }
+                        {(this.state.editShow) ?
+                            <AccountEdit props = {this.state}
+                                         index={this.state.currentSelected}
+                                         updateAccount = {this.onAccountUpdate}
+                            />
+                            :null }
+
                     </div>
 
                 </div>

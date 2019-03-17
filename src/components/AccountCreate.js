@@ -10,7 +10,7 @@ const AccountCreate = (props) => {
 
 
 
-    function handleAddClick(e) {
+    function handleAddClick() {
         console.log("in handleAddClick function");
         const name = document.getElementById("acctName").value;
         const balance = Number(document.getElementById("acctBalance").value);
@@ -27,7 +27,7 @@ const AccountCreate = (props) => {
                 <span className = "DetailText">Account Name:</span>
                 <input className="InputText" id="acctName"></input><br/>
                 <span className = "DetailText">Start Balance:</span>
-                <input className = "InputText" id="acctBalance"></input><br/><br/>
+                <input className = "InputText" id="acctBalance" type="number"></input><br/><br/>
                 <button className="btnText" onClick={handleAddClick}>Create Account</button>
 
             </div>
