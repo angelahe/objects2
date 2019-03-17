@@ -3,15 +3,13 @@ import '../styles/Accounts.css';
 
 const AccountSummary = (props) => {
 
-    console.log("lowest account is ", props.lowestAccount);
+    console.log("lowest account is ", props.props.lowestAccount);
     console.log("props is ",props);
-    console.log("highest account is ", props.highestAccount);
     console.log("highest account 2 is ", props.props.highestAccount);
 
     return(
         <div className = "SummaryText">
             <h2>Accounts Summary</h2>
-
             <span>Lowest Account: </span>
             <span>${props.props.lowestAccount}</span><br/>
             <span>Highest Account: </span>

@@ -40,8 +40,12 @@ const AccountListItem = (props) => {
         //props.deleteClicked(acctIndex);
         //props.onDeleteClick(acctIndex)
     }
+
+
+
     return (
-        <div className="ItemBox AccountListItem" idindex={props.item.acctId} onClick={handleAccountClick}>
+        <div className="ItemBox AccountListItem" idindex={props.item.acctId}
+             onClick={handleAccountClick}>
             <span className="DetailText">{props.item.acctName + " $" + props.item.balance}</span>
             <button className="AccountBtn Add" onClick={handleEditClick}>
                 <img className="btnImg" src={editbtn} alt="Add"/>
