@@ -25,7 +25,7 @@ const AccountCreate = (props) => {
             </div>
             <div className = "ItemBox">
                 <span className = "DetailText">Account Name:</span>
-                <input className="InputText" id="acctName"></input><br/>
+                <input className="InputText" id="acctName" autoFocus={true}></input><br/>
                 <span className = "DetailText">Start Balance:</span>
                 <input className = "InputText" id="acctBalance" type="number"></input><br/><br/>
                 <button className="btnText" onClick={handleAddClick}>Create Account</button>

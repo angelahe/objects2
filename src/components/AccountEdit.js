@@ -11,8 +11,8 @@ const AccountEdit = (props) => {
     function handleUpdateClick() {
         console.log("in handleUpdateClick");
         const newName = document.getElementById("acctName").value;
-        const newBalance = document.getElementById("acctBalance").value;
-        props.updateAccount(newName, newBalance, props.index);
+        const newBalance = Number(document.getElementById("acctBalance").value);
+        props.updateAccount(newName, newBalance, Number(props.index));
     }
 
     const accountName = props.props.AccountList.Accounts[props.index].acctName;
@@ -28,7 +28,7 @@ const AccountEdit = (props) => {
             </div>
             <div className = "ItemBox">
                 <span className = "DetailText">Account Name:</span>
-                <input className="InputText" id="acctName" defaultValue={accountName}></input><br/>
+                <input className="InputText" id="acctName" defaultValue={accountName} autoFocus={true}></input><br/>
                 <span className = "DetailText">Balance:</span>
                 <input className = "InputText" id = "acctBalance" type="number" defaultValue={accountBalance}></input><br/><br/>
                 <button className="btnText" onClick={handleUpdateClick}>Update Account</button>

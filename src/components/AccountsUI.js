@@ -98,7 +98,7 @@ class AccountsUI extends React.Component {
 
         //make a copy of Accountlist, replacing the edited account
         for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
-            if(i == index)
+            if(i === index)
                 AccountListCopy.addAccount(updateWithThis);
             else
                 AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);

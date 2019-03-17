@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e53f95e5-9c18-4842-937c-656e57be09c8" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/AccountDelete.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountCreate.js" afterPath="$PROJECT_DIR$/src/components/AccountCreate.js" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountEdit.js" afterPath="$PROJECT_DIR$/src/components/AccountEdit.js" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountsUI.js" afterPath="$PROJECT_DIR$/src/components/AccountsUI.js" />
@@ -81,11 +83,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AccountsUI.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="AccountsUI.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="47">
-                  <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+                <state relative-caret-position="316">
+                  <caret line="100" column="20" lean-forward="false" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -108,8 +110,8 @@
           <file leaf-file-name="AccountCreate.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/AccountCreate.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+                <state relative-caret-position="405">
+                  <caret line="27" column="64" lean-forward="false" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -117,14 +119,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AccountUI.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/AccountUI.js">
+          <file leaf-file-name="AccountDelete.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/AccountDelete.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -145,11 +145,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AccountEdit.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="AccountEdit.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/AccountEdit.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="88" lean-forward="false" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
+                <state relative-caret-position="450">
+                  <caret line="30" column="95" lean-forward="false" selection-start-line="30" selection-start-column="95" selection-end-line="30" selection-end-column="95" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -157,7 +157,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="NavBar.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="NavBar.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/NavBar.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="210">
@@ -212,9 +212,10 @@
         <option value="$PROJECT_DIR$/src/components/NavBar.js" />
         <option value="$PROJECT_DIR$/src/components/AccountListItem.js" />
         <option value="$PROJECT_DIR$/src/components/AccountSummary.js" />
-        <option value="$PROJECT_DIR$/src/components/AccountCreate.js" />
-        <option value="$PROJECT_DIR$/src/components/AccountEdit.js" />
         <option value="$PROJECT_DIR$/src/components/AccountsUI.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountEdit.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountCreate.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountDelete.js" />
       </list>
     </option>
   </component>
@@ -234,8 +235,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="207" />
-    <option name="width" value="1645" />
+    <option name="y" value="27" />
+    <option name="width" value="1393" />
     <option name="height" value="798" />
   </component>
   <component name="ProjectView">
@@ -333,18 +334,18 @@
       <option name="presentableId" value="Default" />
       <updated>1552329939710</updated>
       <workItem from="1552329941547" duration="9260000" />
-      <workItem from="1552340138642" duration="60377000" />
+      <workItem from="1552340138642" duration="62303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69637000" />
+    <option name="totallyTimeSpent" value="71563000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="207" width="1645" height="798" extended-state="0" />
+    <frame x="0" y="27" width="1393" height="798" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18777293" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22279793" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -638,26 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountCreate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountEdit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="88" lean-forward="false" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NavBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -678,11 +659,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="316">
+          <caret line="100" column="20" lean-forward="false" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="95" lean-forward="false" selection-start-line="30" selection-start-column="95" selection-end-line="30" selection-end-column="95" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountCreate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="64" lean-forward="false" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountDelete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
