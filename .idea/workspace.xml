@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e53f95e5-9c18-4842-937c-656e57be09c8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/AccountEdit.js" afterPath="$PROJECT_DIR$/src/components/AccountEdit.js" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountListItem.js" afterPath="$PROJECT_DIR$/src/components/AccountListItem.js" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountSummary.js" afterPath="$PROJECT_DIR$/src/components/AccountSummary.js" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountsUI.js" afterPath="$PROJECT_DIR$/src/components/AccountsUI.js" />
@@ -41,8 +40,8 @@
           <file leaf-file-name="AccountSummary.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/AccountSummary.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -86,7 +85,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="484">
-                  <caret line="142" column="52" lean-forward="false" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="52" />
+                  <caret line="121" column="52" lean-forward="false" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="52" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -97,8 +96,8 @@
           <file leaf-file-name="AccountListItem.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/AccountListItem.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="645">
-                  <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+                <state relative-caret-position="108">
+                  <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -125,8 +124,8 @@
           <file leaf-file-name="AccountsUI.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="484">
-                  <caret line="42" column="73" lean-forward="false" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+                <state relative-caret-position="507">
+                  <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -321,12 +320,12 @@
       <option name="presentableId" value="Default" />
       <updated>1552329939710</updated>
       <workItem from="1552329941547" duration="9260000" />
-      <workItem from="1552340138642" duration="53290000" />
+      <workItem from="1552340138642" duration="55805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62550000" />
+    <option name="totallyTimeSpent" value="65065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -644,8 +643,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AccountListItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -654,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AccountSummary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -664,8 +663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="42" column="73" lean-forward="false" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+        <state relative-caret-position="507">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
