@@ -6,6 +6,7 @@ import AccountCreate from './AccountCreate';
 import AccountEdit from './AccountEdit';
 import AccountDelete from './AccountDelete';
 import AccountListItem from './AccountListItem';
+import AccountActions from './AccountActions';
 import addbtn from '../images/add_FFFFFF.png';
 
 import '../styles/Accounts.css';
@@ -157,6 +158,37 @@ class AccountsUI extends React.Component {
         })
     }
 
+    onDepositToAccount = (amount, acctIndex) => {
+        console.log("in onDepositToAccount");
+        const AccountListCopy = new Accounts();
+        for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
+            AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
+        }
+        AccountListCopy.depositToAccount(acctIndex, amount);
+        this.setState({
+            AccountList: AccountListCopy,
+            accountActionsShow: false,
+        }, () => {
+           this.updateSummary();
+        });
+    }
+
+    onWithdrawFromAccount = (amount, acctIndex) => {
+        console.log("in onWithdrawFromAccount for of ", amount, acctIndex);
+        const AccountListCopy = new Accounts();
+        for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
+            if (i!== acctIndex)
+                AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
+        }
+        AccountListCopy.withdrawFromAccount(acctIndex, amount);
+        this.setState({
+            AccountList: AccountListCopy,
+            accountActionsShow: false
+        }, () => {
+            this.updateSummary();
+        });
+    }
+
     render() {
 
 //        console.log("Account list items are ", this.state.AccountList);
@@ -169,7 +201,7 @@ class AccountsUI extends React.Component {
                             deleteClicked={this.onDeleteClick}
            />
         );
-//        console.log("Render again, these accounts ", this.state.AccountList);
+
         return(
             <div>
                 <h1>Hello world from Accounts</h1>
@@ -187,21 +219,31 @@ class AccountsUI extends React.Component {
                         </div>
                     </div>
                     <div className = "AccountPanel">
-                        {(this.state.addAccount) ?
-                            <AccountCreate props = {this.state} createClicked = {this.onAccountCreate}/>
+                        {(this.state.addAccount)
+                            ? <AccountCreate props = {this.state}
+                                             createClicked = {this.onAccountCreate}
+                              />
                             : null }
-                        {(this.state.editShow) ?
-                            <AccountEdit props = {this.state}
+                        {(this.state.editShow)
+                            ? <AccountEdit props = {this.state}
                                          index= {this.state.currentSelected}
                                          updateAccount = {this.onAccountUpdate}
-                            />
+                              />
                             :null }
-                        {(this.state.deleteShow) ?
-                            <AccountDelete props = {this.state}
+                        {(this.state.deleteShow)
+                            ? <AccountDelete props = {this.state}
                                            index = {this.state.currentSelected}
                                            deleteAccount = {this.onDeleteAccount}
-                            />
+                              />
                             :null }
+                        {(this.state.accountActionsShow)
+                            ? <AccountActions props={this.state}
+                                              index={this.state.currentSelected}
+                                              deposit={this.onDepositToAccount}
+                                              withdraw={this.onWithdrawFromAccount}
+                            />
+                            : null
+                        }
                     </div>
 
                 </div>

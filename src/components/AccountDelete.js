@@ -16,8 +16,6 @@ const AccountDelete = (props) => {
     const accountName = props.props.AccountList.Accounts[props.index].acctName;
     const accountBalance = props.props.AccountList.Accounts[props.index].balance;
 
-    //had problem iwth having input field be value {accountName}
-
     return(
         <div>
             <div className = "ItemBox AccountHeader">
@@ -29,7 +27,7 @@ const AccountDelete = (props) => {
                 <span className = "DetailText">{accountName}</span><br/>
                 <span className = "DetailText">Balance: $</span>
                 <span className = "DetailText">{accountBalance}</span><br/>
-                <button className="btnText" onClick={handleDeleteClick}>Delete Account</button>
+                <button className="btnText" onClick={handleDeleteClick}>Confirm Delete Account</button>
             </div>
         </div>
     )

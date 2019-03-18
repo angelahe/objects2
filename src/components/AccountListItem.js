@@ -7,18 +7,6 @@ const AccountListItem = (props) => {
 
     function handleAccountClick(e) {
         console.log("in handleclick function AccountList");
-        //console.log("account index is ", e.target.parentNode.getAttribute("idindex"));
-        //console.log("account index 2 is", e.target.parentNode.getAttribute("idindex"));
-        //console.log("classname is ", e.target.parentNode.getAttribute("className"));
-        //const acctIndex = e.target.getAttribute("idindex");
-        //if(e.target.parentNode.getAttribute("className") === "AccountBtn Add")
-        //    console.log("add was clicked");
-        //else if (e.target.parentNode.getAttribute("className") === "AccountBtn Delete")
-        //    console.log("delete was clicked");
-        //else {
-            //props.accountClicked(acctIndex);
-        //    console.log("account item was clicked");
-        //}
 
         let acctIndex = NaN;
 
@@ -57,29 +45,6 @@ const AccountListItem = (props) => {
                 console.log("unknown element was clicked");
         }
     }
-
-//    function handleEditClick(e) {
-//        console.log("in handleEditClick of AccountListItem");
-//        console.log("event is", e);
-//        console.log("event target is", e.target);
-//        console.log("event target parent is ", e.target.parentNode)
-//        console.log("event target parent parent is ", e.target.parentNode.parentNode);
-//        console.log("index is ", e.target.parentNode.parentNode.getAttribute("idindex"));
-//        console.log("props is ", props);
-//        const acctIndex = e.target.parentNode.parentNode.getAttribute("idindex");
-//        props.editClicked(acctIndex);
-        //props.onEditClick(acctIndex);
-        //editClicked(acctIndex);
-//    }
-
-//    function handleDeleteClick(e) {
-//        console.log("in deleteclick");
-//        const acctIndex = e.target.parentNode.getAttribute("idindex");
-        //props.deleteClicked(acctIndex);
-        //props.onDeleteClick(acctIndex)
-//    }
-
-
 
     return (
         <div className="ItemBox AccountListItem" elemtype = "Container" idindex={props.item.acctId}
