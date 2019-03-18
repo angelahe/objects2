@@ -4,6 +4,7 @@ import Account from './account';
 import AccountSummary from './AccountSummary';
 import AccountCreate from './AccountCreate';
 import AccountEdit from './AccountEdit';
+import AccountDelete from './AccountDelete';
 import AccountListItem from './AccountListItem';
 import addbtn from '../images/add_FFFFFF.png';
 
@@ -17,12 +18,13 @@ class AccountsUI extends React.Component {
         this.state = {
             AccountList: new Accounts(),
             accountNumber: 0,
+            nextId: 0,
             currentSelected: 0,
             currentAccount: "Savings",
-            currentBalance: "0",
-            lowestAccount: "0",
-            highestAccount: "0",
-            totalAccount: "0",
+            currentBalance: 0,
+            lowestAccount: 0,
+            highestAccount: 0,
+            totalAccount: 0,
             addAccount: false,
             editShow: false,
             deleteShow: false,
@@ -35,7 +37,12 @@ class AccountsUI extends React.Component {
         let highestCheck = this.state.highestAccount;
         let totalOfAccounts = 0;
         let currentBalance = 0;
-        if (this.state.accountNumber === 1) {
+        if (this.state.accountNumber === 0) {
+            lowestCheck = 0;
+            highestCheck = 0;
+            totalOfAccounts = 0;
+        }
+        else if (this.state.accountNumber === 1) {
             lowestCheck = this.state.AccountList.Accounts[0].balance;
             highestCheck = this.state.AccountList.Accounts[0].balance;
             totalOfAccounts = this.state.AccountList.Accounts[0].balance;
@@ -59,7 +66,7 @@ class AccountsUI extends React.Component {
     }
 
     onAccountCreate = (name, balance) => {
-        const addthis = new Account(balance, name, this.state.accountNumber);
+        const addthis = new Account(balance, name, this.state.nextId);
         const AccountListCopy = new Accounts();
         const changeState = !this.state.addAccount;
         //make a copy of Accountlist to have setState work properly
@@ -67,10 +74,12 @@ class AccountsUI extends React.Component {
             AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
         }
         AccountListCopy.addAccount(addthis);
+        console.log("in onAccountCreate length of array is ", AccountListCopy.Accounts.length);
         this.setState({
             AccountList: AccountListCopy,
-            accountNumber: this.state.accountNumber + 1,
-            addAccount: changeState
+            accountNumber: AccountListCopy.Accounts.length,
+            addAccount: changeState,
+            nextId: this.state.nextId + 1
         }, () => {
             this.updateSummary();
         });
@@ -113,11 +122,31 @@ class AccountsUI extends React.Component {
     }
 
     onDeleteClick = (acctIndex) => {
-        console.log("in delete click", acctIndex)
+        console.log("in delete click", acctIndex);
         this.setState({
             deleteShow: true,
             currentSelected: acctIndex
-        })
+        }, () => {
+            this.updateSummary();
+        });
+    }
+
+    onDeleteAccount = (acctIndex) => {
+        console.log("in delete account", acctIndex);
+        const AccountListCopy = new Accounts();
+
+        for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
+            if (i!== acctIndex)
+                AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
+        }
+        this.setState({
+            AccountList: AccountListCopy,
+            deleteShow: false,
+            accountNumber: AccountListCopy.Accounts.length,
+            currentSelected: 0
+        }, () => {
+            this.updateSummary();
+        });
     }
 
     onAccountClick = (acctIndex) => {
@@ -163,11 +192,16 @@ class AccountsUI extends React.Component {
                             : null }
                         {(this.state.editShow) ?
                             <AccountEdit props = {this.state}
-                                         index={this.state.currentSelected}
+                                         index= {this.state.currentSelected}
                                          updateAccount = {this.onAccountUpdate}
                             />
                             :null }
-
+                        {(this.state.deleteShow) ?
+                            <AccountDelete props = {this.state}
+                                           index = {this.state.currentSelected}
+                                           deleteAccount = {this.onDeleteAccount}
+                            />
+                            :null }
                     </div>
 
                 </div>
