@@ -70,6 +70,8 @@ class AccountsUI extends React.Component {
         const addthis = new Account(balance, name, this.state.nextId);
         const AccountListCopy = new Accounts();
         const changeState = !this.state.addAccount;
+        const nextId = this.state.nextId;
+        console.log("nextid is ", nextId);
         //make a copy of Accountlist to have setState work properly
         for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
             AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
@@ -80,7 +82,7 @@ class AccountsUI extends React.Component {
             AccountList: AccountListCopy,
             accountNumber: AccountListCopy.Accounts.length,
             addAccount: changeState,
-            nextId: this.state.nextId + 1
+            nextId: nextId + 1
         }, () => {
             this.updateSummary();
         });
@@ -193,8 +195,9 @@ class AccountsUI extends React.Component {
 
 //        console.log("Account list items are ", this.state.AccountList);
         console.log("addAccount is ", this.state.addAccount);
-        const accountListItems = this.state.AccountList.Accounts.map(item =>
+        const accountListItems = this.state.AccountList.Accounts.map((item, index) =>
            <AccountListItem key={item.acctId}
+                            index = {index}
                             item={item}
                             accountClicked={this.onAccountClick}
                             editClicked={this.onEditClick}

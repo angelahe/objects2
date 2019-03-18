@@ -45,9 +45,10 @@ const AccountListItem = (props) => {
                 console.log("unknown element was clicked");
         }
     }
+//fixing index from key to actual index idindex={props.item.acctId} to props.index
 
     return (
-        <div className="ItemBox AccountListItem" elemtype = "Container" idindex={props.item.acctId}
+        <div className="ItemBox AccountListItem" elemtype = "Container" idindex={props.index}
              onClick={handleAccountClick}>
             <span className="DetailText" elemtype = "Text">{props.item.acctName + " $" + props.item.balance}</span>
             <button className="AccountBtn" elemtype = "Edit">
