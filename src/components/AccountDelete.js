@@ -6,15 +6,15 @@ const AccountDelete = (props) => {
 
     console.log("in accountedit props is", props);
     console.log("selected account is ", props.index);
-    console.log("account name is ", props.props.AccountList.Accounts[props.index].acctName);
+    console.log("account name is ", props.AccountList.Accounts[props.index].acctName);
 
     function handleDeleteClick() {
         console.log("in handleUpdateClick");
         props.deleteAccount(Number(props.index));
     }
 
-    const accountName = props.props.AccountList.Accounts[props.index].acctName;
-    const accountBalance = props.props.AccountList.Accounts[props.index].balance;
+    const accountName = props.AccountList.Accounts[props.index].acctName;
+    const accountBalance = props.AccountList.Accounts[props.index].balance;
 
     return(
         <div>

@@ -6,7 +6,7 @@ const AccountCreate = (props) => {
 
     console.log("props is ",props);
     console.log("highest account is ", props.highestAccount);
-    console.log("highest account 2 is ", props.props.highestAccount);
+    console.log("highest account 2 is ", props.highestAccount);
 
     function handleCloseClick() {
         console.log("in handleCloseClick");

@@ -209,13 +209,13 @@ class AccountsUI extends React.Component {
             <div>
                 <h1>Hello world from Accounts</h1>
                 <div className = "AccountContainer">
-                    <AccountSummary props = {this.state}/>
+                    <AccountSummary {...this.state}/>
                     <div className = "AccountPanel">
                           <div className = "ItemBox AccountHeader">
                             <span className = "AddAccount">Add Account</span>
                             <button className="AccountBtn" onClick={this.onBtnAddClick}>
                                 <img className="btnImg" src={addbtn} alt="Add"/>
-                            </button>
+            `                    </button>
                           </div>
                         <div className = "AccountList">
                             {accountListItems}
@@ -223,24 +223,24 @@ class AccountsUI extends React.Component {
                     </div>
                     <div className = "AccountPanel">
                         {(this.state.addAccount)
-                            ? <AccountCreate props = {this.state}
+                            ? <AccountCreate {...this.state}
                                              createClicked = {this.onAccountCreate}
                               />
                             : null }
                         {(this.state.editShow)
-                            ? <AccountEdit props = {this.state}
+                            ? <AccountEdit {...this.state}
                                          index= {this.state.currentSelected}
                                          updateAccount = {this.onAccountUpdate}
                               />
                             :null }
                         {(this.state.deleteShow)
-                            ? <AccountDelete props = {this.state}
+                            ? <AccountDelete {...this.state}
                                            index = {this.state.currentSelected}
                                            deleteAccount = {this.onDeleteAccount}
                               />
                             :null }
                         {(this.state.accountActionsShow)
-                            ? <AccountActions props={this.state}
+                            ? <AccountActions {...this.state}
                                               index={this.state.currentSelected}
                                               deposit={this.onDepositToAccount}
                                               withdraw={this.onWithdrawFromAccount}

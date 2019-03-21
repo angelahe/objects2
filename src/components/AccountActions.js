@@ -17,8 +17,8 @@ const AccountActions = (props) => {
         }
     }
 
-    const accountName = props.props.AccountList.Accounts[props.index].acctName;
-    const accountBalance = props.props.AccountList.Accounts[props.index].balance;
+    const accountName = props.AccountList.Accounts[props.index].acctName;
+    const accountBalance = props.AccountList.Accounts[props.index].balance;
     return(
         <div>
             <div className = "ItemBox AccountHeader">
