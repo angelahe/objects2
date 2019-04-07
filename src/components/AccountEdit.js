@@ -4,12 +4,12 @@ import editbtn from '../images/edit_FFFFFF.png'
 
 const AccountEdit = (props) => {
 
-    console.log("in accountedit props is", props);
-    console.log("selected account is ", props.index);
-    console.log("account name is ", props.AccountList.Accounts[props.index].acctName);
+//    console.log("in accountedit props is", props);
+//    console.log("selected account is ", props.index);
+//    console.log("account name is ", props.AccountList.Accounts[props.index].acctName);
 
     function handleUpdateClick() {
-        console.log("in handleUpdateClick");
+//        console.log("in handleUpdateClick");
         const newName = document.getElementById("acctName").value;
         const newBalance = Number(document.getElementById("acctBalance").value);
         props.updateAccount(newName, newBalance, Number(props.index));

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountUI renders correctly 1`] = `
+<div>
+  <div
+    className="ItemBox AccountHeader"
+  >
+    <span
+      className="AddAccount"
+    >
+      Add Account
+    </span>
+    <button
+      className="AccountBtn"
+      onClick={[Function]}
+    >
+      <img
+        alt="Close"
+        className="btnImg"
+        src="close_FFFFFF.png"
+      />
+    </button>
+  </div>
+  <div
+    className="ItemBox"
+  >
+    <span
+      className="DetailText"
+    >
+      Account Name:
+    </span>
+    <input
+      autoFocus={true}
+      className="InputText"
+      id="acctName"
+    />
+    <br />
+    <span
+      className="DetailText"
+    >
+      Start Balance:
+    </span>
+    <input
+      className="InputText"
+      id="acctBalance"
+      type="number"
+    />
+    <br />
+    <br />
+    <button
+      className="btnText"
+      onClick={[Function]}
+    >
+      Create Account
+    </button>
+  </div>
+</div>
+`;
