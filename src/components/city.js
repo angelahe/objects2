@@ -23,26 +23,19 @@ class city {
   }
 
   howBig() {
-    switch (true) {
-      case (this.Population > 100000) :
-        return "City";
-        break;
-      case (this.Population > 20000) :
-        return "Large town";
-        break;
-      case (this.Population >1000) :
-        return "Town";
-        break;
-      case (this.Population > 100) :
-        return "Village";
-        break;
-      case(this.Population > 0):
-        return "Hamlet";
-        break;
-        default:
-          return "Not sure how big this place is...";
-    }
+
+//    console.log("population is", this.Population);
+
+      if (this.Population > 100000) return "City";
+      if (this.Population > 20000) return "Large town";
+      if (this.Population >1000) return "Town";
+      if (this.Population > 100) return "Village";
+      if (this.Population > 0) return "Hamlet";
+
+      //unknown size, return error
+      return "Not sure how big this place is...";
   }
+
 
 
 

@@ -3,17 +3,17 @@ import city from "../components/city";
 test('Test the city show function', () => {
   const newCity = new city("Calgary", "51.0486 N", "114.0708 W", 1239000);
   expect(newCity.show()).toBe("Calgary 51.0486 N 114.0708 W 1239000");
-});
+})
 
 test('Test the city movedIn function', () => {
   const newCity2 = new city("Calgary", "51.0486 N", "114.0708 W", 1000);
   expect(newCity2.movedIn(1000)).toBe(2000);
-});
+})
 
 test('Test the city movedOut function', () => {
   const newCity3 = new city("Calgary", "51.0486 N", "114.0708 W", 2000);
   expect(newCity3.movedOut(1000)).toBe(1000);
-});
+})
 
 test('Test the howBig function', () => {
   const newCity4 = new city("Calgary", "51.0486 N", "114.0708 W", 100001);
@@ -28,4 +28,6 @@ test('Test the howBig function', () => {
   expect(newCity7.howBig()).toBe("Village");
   expect(newCity8.howBig()).toBe("Hamlet");
 })
+
+
 

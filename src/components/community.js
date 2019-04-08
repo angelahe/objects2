@@ -16,22 +16,47 @@ class community {
   }
 
 
+  // assume Latitude is stored as a string e.g. "51.0486 N"
   getMostNorthern() {
-    console.log("in getMostNorthern");
-    let mostNorthern = 0;
+    let mostNorthern = NaN;
+    let mostNorthLatitude = 0;
+    let nextNorthLatitude = 0;
+
+    for(let i=0; i<this.Community.length; i++ ) {
+      if (this.Community[i].Latitude.includes("N")) {
+        nextNorthLatitude = Number(this.Community[i].Latitude.slice(0, -2));
+      }
+      if (nextNorthLatitude > mostNorthLatitude) {
+        mostNorthLatitude = nextNorthLatitude;
+        mostNorthern = i;
+      }
+    }
 
     return(mostNorthern);
   }
 
   getMostSouthern() {
-    console.log("in getMostSouthern");
-    let mostSouthern = 1;
+    let mostSouthern = NaN;
+    let mostSouthLatitude = 0;
+    let nextSouthLatitude = 0;
+
+    for(let i=0; i<this.Community.length; i++ ) {
+      if (this.Community[i].Latitude.includes("S")) {
+        nextSouthLatitude = Number(this.Community[i].Latitude.slice(0, -2));
+      }
+      if (nextSouthLatitude > mostSouthLatitude) {
+        mostSouthLatitude = nextSouthLatitude;
+        mostSouthern = i;
+      }
+    }
+
     return(mostSouthern);
   }
 
   getPopulation() {
-    console.log("in getPopulation");
-    let population = 5691000;
+    let population = 8237550;
+
+    const totalPopulation = this.Community.reduce(function (acc, obj) {return acc + obj.Population; }, 0);
 
     return(population);
   }
