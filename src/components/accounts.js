@@ -1,3 +1,4 @@
+import account from './account';
 class Accounts {
 
     constructor() {
@@ -5,6 +6,7 @@ class Accounts {
     }
 
     addAccount(newAccount) {
+        //this should call account to create new account - balance, name, etc passed in
         console.log("in addAccount");
         this.Accounts.push(newAccount);
         console.log("accounts is", this.Accounts);

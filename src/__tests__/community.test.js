@@ -25,11 +25,11 @@ test('Test the whichSphere function', () => {
 })
 
 test('Test the getMostNorthern function', () => {
- expect(newCommunity.getMostNorthern()).toBe(2);
+ expect(newCommunity.getMostNorthern()).toBe("Edmonton");
 })
 
 test('Test the getMostSouthern function', () => {
-  expect(newCommunity.getMostSouthern()).toBe(3);
+  expect(newCommunity.getMostSouthern()).toBe("Auckland");
 })
 
 test('Test the getPopulation function', () => {

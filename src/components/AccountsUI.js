@@ -207,7 +207,7 @@ class AccountsUI extends React.Component {
 
         return(
             <div>
-                <h1>Hello world from Accounts</h1>
+                <h1>Hello from Accounts</h1>
                 <div className = "AccountContainer">
                     <AccountSummary {...this.state}/>
                     <div className = "AccountPanel">

@@ -1,7 +1,16 @@
+import city from './city';
+
 class community {
 
   constructor() {
     this.Community = [];
+  }
+
+  addCommunity(name, latitude, longitude, population) {
+
+    const newCommunity = new city(name, latitude, longitude, population);
+    this.Community.push(newCommunity);
+
   }
 
   whichSphere(index) {
@@ -13,12 +22,14 @@ class community {
     } else {
       return ("Not of this earth");
     }
+
   }
 
 
   // assume Latitude is stored as a string e.g. "51.0486 N"
   getMostNorthern() {
-    let mostNorthern = NaN;
+
+    let mostNorthern = "";
     let mostNorthLatitude = 0;
     let nextNorthLatitude = 0;
 
@@ -28,15 +39,16 @@ class community {
       }
       if (nextNorthLatitude > mostNorthLatitude) {
         mostNorthLatitude = nextNorthLatitude;
-        mostNorthern = i;
+        mostNorthern = this.Community[i].Name;
       }
     }
 
     return(mostNorthern);
+
   }
 
   getMostSouthern() {
-    let mostSouthern = NaN;
+    let mostSouthern = "";
     let mostSouthLatitude = 0;
     let nextSouthLatitude = 0;
 
@@ -46,7 +58,7 @@ class community {
       }
       if (nextSouthLatitude > mostSouthLatitude) {
         mostSouthLatitude = nextSouthLatitude;
-        mostSouthern = i;
+        mostSouthern = this.Community[i].Name;
       }
     }
 
@@ -54,11 +66,11 @@ class community {
   }
 
   getPopulation() {
-    let population = 8237550;
+    //let population = 8237550;
 
     const totalPopulation = this.Community.reduce(function (acc, obj) {return acc + obj.Population; }, 0);
 
-    return(population);
+    return(totalPopulation);
   }
 }
 

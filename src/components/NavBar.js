@@ -22,7 +22,7 @@ const NavBar = (props) => {
                 <img src={creative} navbtn="math" onClick={handleClick} className="App-icon" alt="two"/>
                 <img src={leader} navbtn="account" onClick={handleClick} className="App-icon" alt="three"/>
                 <img src={teamwork} navbtn="accounts" onClick={handleClick} className="App-icon" alt="four"/>
-                <img src={teamwork2} navbtn="teamwork2" onClick={handleClick} className="App-icon" alt="five"/>
+                <img src={teamwork2} navbtn="community" onClick={handleClick} className="App-icon" alt="five"/>
             </header>
             <p>{props.message}</p>
         </div>
