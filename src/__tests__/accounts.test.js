@@ -108,12 +108,12 @@ test("Test AccountController withdrawFromAccount module", () => {
     //console.log("With empty accounts array returns false");
     expect(newAccountController.withdrawFromAccount()).toBe(false);
     newAccountController.addAccount(newAccount1);
-    expect(newAccountController.withdrawFromAccount(0, 10)).toBe(true);
+    expect(newAccountController.withdrawFromAccount(newAccount1, 10)).toBe(true);
     expect(newAccountController.Accounts[0].balance).toBe(0);
-    expect(newAccountController.withdrawFromAccount(0, 10)).toBe(true);
+    expect(newAccountController.withdrawFromAccount(newAccount1, 10)).toBe(true);
     expect(newAccountController.Accounts[0].balance).toBe(-10);
     newAccountController.addAccount(newAccount2);
-    expect(newAccountController.withdrawFromAccount(1, 10)).toBe(true);
+    expect(newAccountController.withdrawFromAccount(newAccount2, 10)).toBe(true);
     expect(newAccountController.Accounts[1].balance).toBe(5);
 });
 
@@ -127,11 +127,11 @@ test("Test AccountController depositToAccount module", () => {
     //console.log("With empty accounts array returns false");
     expect(newAccountController.depositToAccount()).toBe(false);
     newAccountController.addAccount(newAccount1);
-    expect(newAccountController.depositToAccount(0, 10)).toBe(true);
+    expect(newAccountController.depositToAccount(newAccount1, 10)).toBe(true);
     expect(newAccountController.Accounts[0].balance).toBe(0);
-    expect(newAccountController.depositToAccount(0, 10)).toBe(true);
+    expect(newAccountController.depositToAccount(newAccount1, 10)).toBe(true);
     expect(newAccountController.Accounts[0].balance).toBe(10);
     newAccountController.addAccount(newAccount2);
-    expect(newAccountController.depositToAccount(1, 10)).toBe(true);
+    expect(newAccountController.depositToAccount(newAccount2, 10)).toBe(true);
     expect(newAccountController.Accounts[1].balance).toBe(25);
 });
