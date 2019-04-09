@@ -1,12 +1,17 @@
 import React from 'react';
-import '../styles/Styles140.css'
-import editbtn from '../images/edit_FFFFFF.png'
+import '../styles/Styles140.css';
+import closebtn from '../images/close_FFFFFF.png';
+
 
 const AccountEdit = (props) => {
 
 //    console.log("in accountedit props is", props);
 //    console.log("selected account is ", props.index);
 //    console.log("account name is ", props.AccountList.Accounts[props.index].acctName);
+
+    function handleCloseClick() {
+        props.closeClicked("edit");
+    }
 
     function handleUpdateClick() {
         const newName = document.getElementById("acctName").value;
@@ -21,7 +26,9 @@ const AccountEdit = (props) => {
         <div>
             <div className = "ItemBox AppHeader">
                 <span className = "AddItem">Edit Account</span>
-                <button className="AppBtn "><img className="btnImg" src={editbtn} alt="Add"/></button>
+                <button className="AppBtn" onClick={handleCloseClick}>
+                    <img className="btnImg" src={closebtn} alt="Close"/>
+                </button>
             </div>
             <div className = "ItemBox">
                 <span className = "DetailText">Account Name:</span>

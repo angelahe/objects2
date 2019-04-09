@@ -16,6 +16,16 @@ exports[`AccountUI renders correctly 1`] = `
       $
       1000
     </span>
+    <button
+      className="AppBtn"
+      onClick={[Function]}
+    >
+      <img
+        alt="Close"
+        className="btnImg"
+        src="close_FFFFFF.png"
+      />
+    </button>
   </div>
   <div
     className="ItemBox"

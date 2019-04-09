@@ -14,6 +14,7 @@ it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<AccountDelete account= {item}
                                  deleteAccount={props.onDeleteAccount}
+                                 closeClicked={props.onBtnCloseClick}
                   />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
@@ -21,12 +22,14 @@ it('renders without crashing', () => {
 it('renders without crashing', () => {
   shallow(<AccountDelete account={item}
                          deleteAccount={props.onDeleteAccount}
+                         closeClicked={props.onBtnCloseClick}
           />);
 });
 
 test('AccountUI renders correctly', () => {
   const tree = renderer.create(<AccountDelete account= {item}
                                               deleteAccount = {props.onDeleteAccount}
+                                              closeClicked={props.onBtnCloseClick}
       />).toJSON();
   expect(tree).toMatchSnapshot();
 });

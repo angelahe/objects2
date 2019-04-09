@@ -11,12 +11,13 @@ exports[`AccountUI renders correctly 1`] = `
       Edit Account
     </span>
     <button
-      className="AppBtn "
+      className="AppBtn"
+      onClick={[Function]}
     >
       <img
-        alt="Add"
+        alt="Close"
         className="btnImg"
-        src="edit_FFFFFF.png"
+        src="close_FFFFFF.png"
       />
     </button>
   </div>

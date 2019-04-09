@@ -4,9 +4,16 @@
     <list default="true" id="e53f95e5-9c18-4842-937c-656e57be09c8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/__tests__/AccountActions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/AccountActions.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/AccountCreate.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/AccountCreate.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/__snapshots__/AccountCreate.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/__snapshots__/AccountCreate.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/AccountDelete.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/AccountDelete.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/AccountEdit.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/AccountEdit.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccountActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccountDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccountEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountEdit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccountSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountSummary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountsUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountsUI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommunityUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommunityUI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accounts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,22 +29,10 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/AccountCreate.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/__tests__/AccountsUI.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -48,8 +43,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/CommunityUI.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="40" selection-start-line="40" selection-end-line="40" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -70,6 +65,18 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/AccountSummary.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/__tests__/AccountUI.test.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
@@ -78,11 +85,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/AccountDelete.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+                <state relative-caret-position="465">
+                  <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -93,8 +100,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/AccountEdit.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="121">
-                  <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+                <state relative-caret-position="180">
+                  <caret line="12" selection-start-line="12" selection-end-line="12" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -126,11 +133,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/accounts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="97">
-                  <caret line="20" selection-start-line="20" selection-end-line="20" />
+                <state relative-caret-position="639">
+                  <caret line="81" selection-start-line="81" selection-end-line="81" />
                 </state>
               </provider>
             </entry>
@@ -139,11 +146,23 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/AccountCreate.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/__tests__/AccountActions.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+                <state relative-caret-position="285">
+                  <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -154,8 +173,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/AccountActions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+                <state relative-caret-position="105">
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -166,8 +185,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/__tests__/AccountDelete.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+                <state relative-caret-position="360">
+                  <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -176,19 +195,13 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/community.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="643">
-                  <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/__tests__/AccountCreate.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -196,8 +209,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/__tests__/AccountEdit.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="160">
-                  <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+                <state relative-caret-position="420">
+                  <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -217,11 +230,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="429">
-                  <caret line="166" column="83" selection-start-line="166" selection-start-column="83" selection-end-line="166" selection-end-column="83" />
+                <state relative-caret-position="-1867">
+                  <caret line="30" selection-start-line="30" selection-end-line="30" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -276,16 +289,18 @@
       <find>onAccountClick</find>
       <find>delete</find>
       <find>onDeleteClick</find>
-      <find>console</find>
       <find>john</find>
       <find>onAccountUp</find>
       <find>item</find>
       <find>onEditClick</find>
-      <find>update</find>
-      <find>index</find>
       <find>currentSelected</find>
       <find>currentAccount</find>
       <find>onAccountCreate</find>
+      <find>handleClose</find>
+      <find>makeAccountCopy</find>
+      <find>update</find>
+      <find>index</find>
+      <find>console</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -313,29 +328,29 @@
         <option value="$PROJECT_DIR$/src/__tests__/city.test.js" />
         <option value="$PROJECT_DIR$/src/components/community.js" />
         <option value="$PROJECT_DIR$/src/components/CommunitySummary.js" />
-        <option value="$PROJECT_DIR$/src/components/AccountSummary.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/CommunityUI.test.js" />
-        <option value="$PROJECT_DIR$/src/components/AccountActions.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountListItem.test.js" />
         <option value="$PROJECT_DIR$/src/components/CityCreate.js" />
         <option value="$PROJECT_DIR$/src/__tests__/community.test.js" />
         <option value="$PROJECT_DIR$/src/components/OneCommunity.js" />
         <option value="$PROJECT_DIR$/src/styles/Styles140.css" />
-        <option value="$PROJECT_DIR$/src/components/CommunityUI.js" />
-        <option value="$PROJECT_DIR$/src/components/AccountDelete.js" />
         <option value="$PROJECT_DIR$/src/__tests__/account.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/math.test.js" />
-        <option value="$PROJECT_DIR$/src/components/AccountEdit.js" />
         <option value="$PROJECT_DIR$/src/components/AccountListItem.js" />
-        <option value="$PROJECT_DIR$/src/__tests__/AccountDelete.test.js" />
-        <option value="$PROJECT_DIR$/src/components/accounts.js" />
         <option value="$PROJECT_DIR$/src/__tests__/accounts.test.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/AccountActions.test.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/AccountDelete.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountEdit.test.js" />
-        <option value="$PROJECT_DIR$/src/components/AccountsUI.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountCreate.test.js" />
         <option value="$PROJECT_DIR$/src/components/AccountCreate.js" />
-        <option value="$PROJECT_DIR$/src/__tests__/AccountActions.test.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountEdit.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountActions.js" />
+        <option value="$PROJECT_DIR$/src/components/accounts.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountSummary.js" />
+        <option value="$PROJECT_DIR$/src/components/CommunityUI.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountsUI.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountDelete.js" />
       </list>
     </option>
   </component>
@@ -514,7 +529,7 @@
       <workItem from="1552340138642" duration="75048000" />
       <workItem from="1553101651570" duration="6863000" />
       <workItem from="1554073935112" duration="16039000" />
-      <workItem from="1554649069489" duration="57006000" />
+      <workItem from="1554649069489" duration="60275000" />
     </task>
     <servers />
   </component>
@@ -551,7 +566,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164216000" />
+    <option name="totallyTimeSpent" value="167485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -725,16 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountSummary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/community.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
@@ -776,16 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CommunityUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/community.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -817,50 +812,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountsUI.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AccountListItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountEdit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountDelete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountEdit.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -887,23 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountCreate.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountCreate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/CommunityUI.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -914,27 +852,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/accounts.js">
+    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountsUI.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="166" column="83" selection-start-line="166" selection-start-column="83" selection-end-line="166" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="135">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -943,8 +864,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/AccountDelete.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="360">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -953,8 +874,105 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/AccountActions.test.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountEdit.test.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountCreate.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountCreate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/accounts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountSummary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1867">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CommunityUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountDelete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

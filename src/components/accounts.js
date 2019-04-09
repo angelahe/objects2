@@ -1,4 +1,3 @@
-import account from './account';
 class Accounts {
 
     constructor() {
@@ -60,12 +59,11 @@ class Accounts {
     //returns the balance of the lowest account, 0 if empty
     getMinAccount() {
 
-        let len = this.Accounts.length, min = Infinity, index = Infinity;
+        let len = this.Accounts.length, min = Infinity;
 
         while (len--) {
             if (this.Accounts[len].balance < min) {
                 min = this.Accounts[len].balance;
-                index = len;
             }
         }
 
@@ -73,15 +71,14 @@ class Accounts {
 
     }
 
-    //returns the index to the account with the highest balance, or first highest item if tied
+    //returns the balance of the account with the highest balance, or first highest item if tied
     getMaxAccount() {
 
-        let len = this.Accounts.length, max = 0, index = Infinity;
+        let len = this.Accounts.length, max = 0;
 
         while (len--) {
             if (this.Accounts[len].balance > max) {
                 max = this.Accounts[len].balance;
-                index = len;
             }
         }
         return(max);

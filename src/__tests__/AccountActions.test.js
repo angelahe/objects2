@@ -17,6 +17,7 @@ it('renders without crashing', () => {
   ReactDOM.render(<AccountActions account={account}
                                   deposit={props.onDepositToAccount}
                                   withdraw={props.onWithdrawFromAccount}
+                                  closeClicked={props.onBtnCloseClick}
                   />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
@@ -25,6 +26,7 @@ it('renders without crashing', () => {
   shallow(<AccountActions account={account}
                           deposit={props.onDepositToAccount}
                           withdraw={props.onWithdrawFromAccount}
+                          closeClicked={props.onBtnCloseClick}
           />);
 });
 
@@ -32,6 +34,7 @@ test('AccountUI renders correctly', () => {
   const tree = renderer.create(<AccountActions account={account}
                                                deposit={props.onDepositToAccount}
                                                withdraw={props.onWithdrawFromAccount}
+                                               closeClicked={props.onBtnCloseClick}
                                />).toJSON();
   expect(tree).toMatchSnapshot();
 });

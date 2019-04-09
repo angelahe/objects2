@@ -27,27 +27,41 @@ class AccountsUI extends React.Component {
         }
     }
 
+    onBtnCloseClick = (closeType) => {
+//        if (confirm("Do you really want to close this window?")) {
+//            console.log("close the window");
+//        }
+//        else
+//            console.log("leave it alone");
+
+        switch (closeType) {
+            case "create":
+                this.setState ({addAccount: false});
+                break;
+            case "edit":
+                this.setState ({editShow: false});
+                break;
+            case "delete":
+                this.setState ({deleteShow: false});
+                break;
+            case "actions":
+                this.setState ({accountActionsShow: false});
+                break;
+            default:
+                console.log("unknown window type to close");
+        }
+    }
+
     onBtnAddClick = () => {
         const changeState = !this.state.addAccount;
         this.setState ({addAccount: changeState});
     }
 
-    //make a copy of the current AccountList in state
-    makeAccountCopy = () => {
-        const AccountListCopy = new Accounts();
-        for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
-            AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
-        }
-        return AccountListCopy;
-
-    }
-
     onAccountCreate = (name, balance) => {
-        const AccountListCopy = this.makeAccountCopy();
-        AccountListCopy.addAccount(new Account(balance, name, this.state.nextId));
+        this.state.AccountList.addAccount(new Account(balance, name, this.state.nextId));
 
         this.setState({
-            AccountList: AccountListCopy,
+            AccountList: this.state.AccountList,
             addAccount: !this.state.addAccount,
             nextId: this.state.nextId + 1
         });
@@ -146,18 +160,22 @@ class AccountsUI extends React.Component {
                     <div className = "AppPanel">
                         {(this.state.addAccount)
                             ? <AccountCreate createClicked = {this.onAccountCreate}
+                                             closeClicked={this.onBtnCloseClick}
                               />
                             : null }
                         {(this.state.editShow)
                             ? <AccountEdit
                                          account={this.state.currentAccount}
                                          updateAccount = {this.onAccountUpdate}
+                                         closeClicked={this.onBtnCloseClick}
+
                               />
                             :null }
                         {(this.state.deleteShow)
                             ? <AccountDelete
                                            account={this.state.currentAccount}
                                            deleteAccount = {this.onDeleteAccount}
+                                           closeClicked={this.onBtnCloseClick}
                               />
                             :null }
                         {(this.state.accountActionsShow)
@@ -165,6 +183,7 @@ class AccountsUI extends React.Component {
                                               account={this.state.currentAccount}
                                               deposit={this.onDepositToAccount}
                                               withdraw={this.onWithdrawFromAccount}
+                                              closeClicked={this.onBtnCloseClick}
                             />
                             : null
                         }

@@ -1,10 +1,14 @@
 import React from 'react';
 import '../styles/Styles140.css'
-import deletebtn from '../images/delete_FFFFFF.png';
+import closebtn from '../images/close_FFFFFF.png';
 
 const AccountDelete = (props) => {
 
-    function handleDeleteClick() {
+  function handleCloseClick() {
+    props.closeClicked("delete");
+  }
+
+  function handleDeleteClick() {
         console.log("in handleUpdateClick");
         props.deleteAccount(props.account);
     }
@@ -16,14 +20,16 @@ const AccountDelete = (props) => {
         <div>
             <div className = "ItemBox AppHeader">
                 <span className = "AddItem">Delete Account</span>
-                <button className="AppBtn "><img className="btnImg" src={deletebtn} alt="Add"/></button>
+              <button className="AppBtn" onClick={handleCloseClick}>
+                <img className="btnImg" src={closebtn} alt="Close"/>
+              </button>
             </div>
             <div className = "ItemBox">
                 <span className = "DetailText">Account Name:</span>
                 <span className = "DetailText">{accountName}</span><br/>
                 <span className = "DetailText">Balance: $</span>
                 <span className = "DetailText">{accountBalance}</span><br/>
-                <button className="btnText" onClick={handleDeleteClick}>Confirm Delete Account</button>
+                <button className="btnText" onClick={handleDeleteClick}>Delete Account</button>
             </div>
         </div>
     )

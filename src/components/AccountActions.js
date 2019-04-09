@@ -1,7 +1,13 @@
 import React from 'react';
 import '../styles/Styles140.css';
+import closebtn from '../images/close_FFFFFF.png';
 
 const AccountActions = (props) => {
+
+    function handleCloseClick() {
+        props.closeClicked("actions");
+    }
+
 
     function handleClick(e) {
         const amount = Number(document.getElementById("amount").value);
@@ -24,6 +30,9 @@ const AccountActions = (props) => {
             <div className = "ItemBox AppHeader">
                 <span className = "AddItem">{accountName}</span>
                 <span className = "AddItem">${accountBalance}</span>
+                <button className="AppBtn" onClick={handleCloseClick}>
+                    <img className="btnImg" src={closebtn} alt="Close"/>
+                </button>
             </div>
             <div className = "ItemBox" onClick={handleClick}>
                 <span className = "DetailText">For Account Name:</span>

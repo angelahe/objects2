@@ -1,5 +1,4 @@
 import React from 'react';
-import city from './city';
 import community from './community';
 import CityCreate from './CityCreate';
 import OneCommunity from './OneCommunity';

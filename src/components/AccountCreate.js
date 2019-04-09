@@ -5,7 +5,7 @@ import "../styles/Styles140.css";
 const AccountCreate = (props) => {
 
     function handleCloseClick() {
-        console.log("in handleCloseClick");
+        props.closeClicked("create");
     }
 
     function handleAddClick() {

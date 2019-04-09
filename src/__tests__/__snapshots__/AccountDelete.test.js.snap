@@ -11,12 +11,13 @@ exports[`AccountUI renders correctly 1`] = `
       Delete Account
     </span>
     <button
-      className="AppBtn "
+      className="AppBtn"
+      onClick={[Function]}
     >
       <img
-        alt="Add"
+        alt="Close"
         className="btnImg"
-        src="delete_FFFFFF.png"
+        src="close_FFFFFF.png"
       />
     </button>
   </div>
@@ -49,7 +50,7 @@ exports[`AccountUI renders correctly 1`] = `
       className="btnText"
       onClick={[Function]}
     >
-      Confirm Delete Account
+      Delete Account
     </button>
   </div>
 </div>
