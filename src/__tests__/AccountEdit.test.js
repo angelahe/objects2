@@ -13,21 +13,27 @@ let props = new AccountsUI();
 const newAccount = new Account(100, "Test", 0);
 const newAccounts = new Accounts();
 newAccounts.addAccount(newAccount);
-console.log("newAccounts is ", newAccounts);
-props.index = 0;
+//console.log("newAccounts is ", newAccounts);
 props.state.AccountList = newAccounts;
+const account = newAccount;
 
-xit('renders without crashing', () => {
+it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<AccountEdit {...props.state} index = {0} />, div);
+  ReactDOM.render(<AccountEdit account={account}
+                               updateAccount = {props.onAccountUpdate}
+                  />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
-xit('renders without crashing', () => {
-  shallow(<AccountEdit {...props.state}/>);
+it('renders without crashing', () => {
+  shallow(<AccountEdit account={account}
+                       updateAccount = {props.onAccountUpdate}
+          />);
 });
 
-xtest('AccountUI renders correctly', () => {
-  const tree = renderer.create(<AccountEdit {...props.state}/>).toJSON();
+test('AccountUI renders correctly', () => {
+  const tree = renderer.create(<AccountEdit account={account}
+                                            updateAccount = {props.onAccountUpdate}
+                               />).toJSON();
   expect(tree).toMatchSnapshot();
 });

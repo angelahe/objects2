@@ -14,7 +14,7 @@ const AccountListItem = (props) => {
         switch (e.target.getAttribute("elemtype")) {
             case "Edit":
                 acctIndex = e.target.parentNode.getAttribute("idindex");
-                props.editClicked(acctIndex);
+                props.editClicked(props.account);
                 break;
             case "Delete":
                 acctIndex = e.target.parentNode.getAttribute("idindex");
@@ -22,7 +22,7 @@ const AccountListItem = (props) => {
                 break;
             case "Edit Image":
                 acctIndex = e.target.parentNode.parentNode.getAttribute("idindex");
-                props.editClicked(acctIndex);
+                props.editClicked(props.account);
                 break;
             case "Delete Image":
                 acctIndex = e.target.parentNode.parentNode.getAttribute("idindex");

@@ -9,16 +9,13 @@ const AccountEdit = (props) => {
 //    console.log("account name is ", props.AccountList.Accounts[props.index].acctName);
 
     function handleUpdateClick() {
-//        console.log("in handleUpdateClick");
         const newName = document.getElementById("acctName").value;
         const newBalance = Number(document.getElementById("acctBalance").value);
-        props.updateAccount(newName, newBalance, Number(props.index));
+        props.updateAccount(newName, newBalance, props.account);
     }
 
-    const accountName = props.AccountList.Accounts[props.index].acctName;
-    const accountBalance = props.AccountList.Accounts[props.index].balance;
-
-    //had problem iwth having input field be value {accountName}
+    const accountName = props.account.acctName;
+    const accountBalance = props.account.balance;
 
     return(
         <div>

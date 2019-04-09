@@ -13,14 +13,22 @@ class Accounts {
 
     deleteAccount(account) {
         const index = this.Accounts.findIndex(a => a.acctId === account.acctId);
+        if(index || index ===0) {
+            this.Accounts.splice(index, 1);
+            return true;
+        }
+        else return false;
 
-        this.Accounts.splice(index, 1);
-        return this.Accounts;
     }
 
-    updateAccount(index, newInfo) {
-        this.Accounts[index] = newInfo;
-        return this.Accounts;
+    updateAccount(newName, newBalance, account) {
+        const index = this.Accounts.findIndex(a => a.acctId === account.acctId);
+        if (index || index === 0) {
+            this.Accounts[index].acctName = newName;
+            this.Accounts[index].balance = newBalance;
+            return true;
+        }
+        else return false;
     }
 
 

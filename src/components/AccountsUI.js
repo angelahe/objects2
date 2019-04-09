@@ -19,7 +19,6 @@ class AccountsUI extends React.Component {
         this.state = {
             AccountList: new Accounts(),
             nextId: 0,
-            currentSelected: 0,
             currentAccount: null,
             addAccount: false,
             editShow: false,
@@ -54,21 +53,23 @@ class AccountsUI extends React.Component {
         });
     }
 
-    onEditClick = (acctIndex) => {
+    onEditClick = (account) => {
         this.setState({
             editShow: !this.state.editShow,
-            currentSelected: acctIndex
+            currentAccount: account
         });
 
     }
 
-    onAccountUpdate = (name, balance, index) => {
-        this.state.AccountList.updateAccount(index, new Account(balance, name, this.state.AccountList.Accounts[index].acctId));
+    //only update state if the accountupdate was successful
+    onAccountUpdate = (newName, newBalance, account) => {
+        this.state.AccountList.updateAccount(newName, newBalance, account)
 
         this.setState({
-            AccountList: this.state.AccountList,
-            editShow: !this.state.editShow
-        });
+                AccountList: this.state.AccountList,
+                editShow: !this.state.editShow
+            });
+
     }
 
     onDeleteClick = (account) => {
@@ -149,8 +150,8 @@ class AccountsUI extends React.Component {
                               />
                             : null }
                         {(this.state.editShow)
-                            ? <AccountEdit {...this.state}
-                                         index= {this.state.currentSelected}
+                            ? <AccountEdit
+                                         account={this.state.currentAccount}
                                          updateAccount = {this.onAccountUpdate}
                               />
                             :null }

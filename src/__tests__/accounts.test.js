@@ -19,12 +19,14 @@ test("Test AccountController class", () => {
     newAccountController.addAccount(new Account(15, "John", 3));
     expect(newAccountController.Accounts.length).toBe(2);
     //console.log("Test Account delete of 1st account in array of 2");
-    expect(newAccountController.deleteAccount(newAccountController.Accounts[0]).length).toBe(1);
+    expect(newAccountController.deleteAccount(newAccount)).toBe(true);
+    expect(newAccountController.Accounts.length).toBe(1);
     expect(newAccountController.Accounts[0].acctName).toBe("John");
     expect(newAccountController.Accounts[0].balance).toBe(15);
     //console.log("accounts is", newAccountController.Accounts);
     //console.log("Test Account delete of first account of 1, return empty array");
-    expect(newAccountController.deleteAccount(newAccountController.Accounts[0]).length).toBe(0);
+    expect(newAccountController.deleteAccount(newAccount2)).toBe(true);
+    expect(newAccountController.Accounts.length).toBe(0);
     //console.log("Test Account delete of middle account in array of 3");
     newAccountController.addAccount(newAccount);
     newAccountController.addAccount(newAccount2);
@@ -34,7 +36,8 @@ test("Test AccountController class", () => {
     expect(newAccountController.Accounts[0].acctName).toBe("Sue");
     expect(newAccountController.Accounts[1].acctName).toBe("Andrew");
     //console.log("Test Account delete from end of array");
-    expect(newAccountController.deleteAccount(newAccount3).length).toBe(1);
+    expect(newAccountController.deleteAccount(newAccount3)).toBe(true);
+    expect(newAccountController.Accounts.length).toBe(1);
     expect(newAccountController.Accounts[0].acctName).toBe("Sue");
 
 });
@@ -134,4 +137,16 @@ test("Test AccountController depositToAccount module", () => {
     newAccountController.addAccount(newAccount2);
     expect(newAccountController.depositToAccount(newAccount2, 10)).toBe(true);
     expect(newAccountController.Accounts[1].balance).toBe(25);
+});
+
+test("Test AccountController update module", () => {
+    const newAccount1 = new Account(-10, "Susan", 0);
+    const newAccount2 = new Account(10, "Susie", 0);
+    const AccountController = new Accounts();
+    AccountController.addAccount(newAccount1);
+
+    expect(AccountController.updateAccount("Susie", 10, newAccount1)).toBe(true);
+    expect(AccountController.Accounts[0].acctName).toBe("Susie");
+    expect(AccountController.Accounts[0].balance).toBe(10);
+
 });

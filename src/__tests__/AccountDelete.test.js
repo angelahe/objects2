@@ -10,8 +10,6 @@ const item = {acctId : 1,
   acctName: "Savings",
   balance: 1000};
 
-const index = 1;
-
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<AccountDelete account= {item}
