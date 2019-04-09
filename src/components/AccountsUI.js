@@ -18,14 +18,7 @@ class AccountsUI extends React.Component {
         super(props)
         this.state = {
             AccountList: new Accounts(),
-            accountNumber: 0,
             nextId: 0,
-            currentSelected: 0,
-            currentAccount: "Savings",
-            currentBalance: 0,
-            lowestAccount: 0,
-            highestAccount: 0,
-            totalAccount: 0,
             addAccount: false,
             editShow: false,
             deleteShow: false,
@@ -54,7 +47,6 @@ class AccountsUI extends React.Component {
 
         this.setState({
             AccountList: AccountListCopy,
-            accountNumber: AccountListCopy.Accounts.length,
             addAccount: !this.state.addAccount,
             nextId: this.state.nextId + 1
         });
@@ -89,7 +81,6 @@ class AccountsUI extends React.Component {
     }
 
     onDeleteClick = (acctIndex) => {
-        console.log("in delete click", acctIndex);
         this.setState({
             deleteShow: true,
             currentSelected: acctIndex
@@ -97,17 +88,12 @@ class AccountsUI extends React.Component {
     }
 
     onDeleteAccount = (acctIndex) => {
-        console.log("in delete account", acctIndex);
-        const AccountListCopy = new Accounts();
+        const AccountListCopy = this.makeAccountCopy();
+        AccountListCopy.deleteAccount(acctIndex);
 
-        for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
-            if (i!== acctIndex)
-                AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
-        }
         this.setState({
             AccountList: AccountListCopy,
             deleteShow: false,
-            accountNumber: AccountListCopy.Accounts.length,
             currentSelected: 0
         });
     }
