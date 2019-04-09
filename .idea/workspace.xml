@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e53f95e5-9c18-4842-937c-656e57be09c8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/accounts.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/accounts.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AccountSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountSummary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountsUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountsUI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accounts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -238,8 +234,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="212" column="68" lean-forward="true" selection-start-line="212" selection-start-column="68" selection-end-line="212" selection-end-column="68" />
+                <state relative-caret-position="795">
+                  <caret line="182" column="9" selection-start-line="182" selection-start-column="9" selection-end-line="182" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -263,6 +259,7 @@
       <find>op mi</find>
       <find>accountNumber</find>
       <find>acctName</find>
+      <find>updateSummary</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -305,11 +302,11 @@
         <option value="$PROJECT_DIR$/src/components/community.js" />
         <option value="$PROJECT_DIR$/src/components/CommunitySummary.js" />
         <option value="$PROJECT_DIR$/src/components/CommunityUI.js" />
-        <option value="$PROJECT_DIR$/src/components/AccountsUI.js" />
         <option value="$PROJECT_DIR$/src/components/accounts.js" />
         <option value="$PROJECT_DIR$/src/__tests__/accounts.test.js" />
         <option value="$PROJECT_DIR$/src/components/AccountSummary.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountsUI.js" />
       </list>
     </option>
   </component>
@@ -488,7 +485,7 @@
       <workItem from="1552340138642" duration="75048000" />
       <workItem from="1553101651570" duration="6863000" />
       <workItem from="1554073935112" duration="16039000" />
-      <workItem from="1554649069489" duration="30710000" />
+      <workItem from="1554649069489" duration="31162000" />
     </task>
     <servers />
   </component>
@@ -525,7 +522,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137920000" />
+    <option name="totallyTimeSpent" value="138372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
@@ -911,20 +908,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
+    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountSummary.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="212" column="68" lean-forward="true" selection-start-line="212" selection-start-column="68" selection-end-line="212" selection-end-column="68" />
+        <state relative-caret-position="630">
+          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountSummary.test.js">
+    <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+        <state relative-caret-position="795">
+          <caret line="182" column="9" selection-start-line="182" selection-start-column="9" selection-end-line="182" selection-end-column="9" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

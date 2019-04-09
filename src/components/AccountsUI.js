@@ -33,34 +33,6 @@ class AccountsUI extends React.Component {
         }
     }
 
-    updateSummary = () => {
-        let lowestCheck = this.state.lowestAccount;
-        let highestCheck = this.state.highestAccount;
-        let totalOfAccounts = 0;
-        let currentBalance = 0;
-        if (this.state.accountNumber === 0) {
-            lowestCheck = 0;
-            highestCheck = 0;
-            totalOfAccounts = 0;
-        }
-        else if (this.state.accountNumber === 1) {
-            lowestCheck = this.state.AccountList.Accounts[0].balance;
-            highestCheck = this.state.AccountList.Accounts[0].balance;
-            totalOfAccounts = this.state.AccountList.Accounts[0].balance;
-        }
-        else {
-            for(let i=0; i<this.state.accountNumber; i++) {
-                currentBalance = this.state.AccountList.Accounts[i].balance;
-                totalOfAccounts += this.state.AccountList.Accounts[i].balance;
-                lowestCheck = (currentBalance < lowestCheck) ? currentBalance : lowestCheck;
-                highestCheck = (currentBalance > highestCheck) ? currentBalance : highestCheck;
-            }
-        }
-        this.setState ({lowestAccount: lowestCheck,
-                        highestAccount: highestCheck,
-                        totalAccount: totalOfAccounts});
-    }
-
     onBtnAddClick = () => {
         const changeState = !this.state.addAccount;
         this.setState ({addAccount: changeState});
@@ -83,8 +55,6 @@ class AccountsUI extends React.Component {
             accountNumber: AccountListCopy.Accounts.length,
             addAccount: changeState,
             nextId: nextId + 1
-        }, () => {
-            this.updateSummary();
         });
     }
 
@@ -94,10 +64,6 @@ class AccountsUI extends React.Component {
         this.setState({
             editShow: !this.state.editShow,
             currentSelected: acctIndex
-        }, () => {
-            console.log("this.state.editshow is ", this.state.editShow);
-            console.log("this.state.acctindex is ", this.state.currentSelected);
-            this.updateSummary();
         });
 
     }
@@ -119,8 +85,6 @@ class AccountsUI extends React.Component {
         this.setState({
             AccountList: AccountListCopy,
             editShow: changeState
-        }, () => {
-            this.updateSummary();
         });
     }
 
@@ -129,8 +93,6 @@ class AccountsUI extends React.Component {
         this.setState({
             deleteShow: true,
             currentSelected: acctIndex
-        }, () => {
-            this.updateSummary();
         });
     }
 
@@ -147,8 +109,6 @@ class AccountsUI extends React.Component {
             deleteShow: false,
             accountNumber: AccountListCopy.Accounts.length,
             currentSelected: 0
-        }, () => {
-            this.updateSummary();
         });
     }
 
@@ -170,8 +130,6 @@ class AccountsUI extends React.Component {
         this.setState({
             AccountList: AccountListCopy,
             accountActionsShow: false,
-        }, () => {
-           this.updateSummary();
         });
     }
 
@@ -186,8 +144,6 @@ class AccountsUI extends React.Component {
         this.setState({
             AccountList: AccountListCopy,
             accountActionsShow: false
-        }, () => {
-            this.updateSummary();
         });
     }
 
