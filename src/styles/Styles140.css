@@ -1,4 +1,4 @@
-.AccountContainer {
+.AppContainer {
     background-color: #e6f5ff;
     display: flex;
     flex-direction: row;
@@ -6,7 +6,7 @@
 
 }
 
-.AccountPanel {
+.AppPanel {
     background-color: whitesmoke;
     border-radius: 10px;
     border-width: 2px;
@@ -22,7 +22,7 @@
     border-radius: 10px;
 }
 
-.AccountBtn {
+.AppBtn {
     color: white;
     height: 35px;
     width:35px;
@@ -42,27 +42,27 @@
     border-radius: 10px;
     padding: 10px;
 }
-.AccountHeader {
+.AppHeader {
     background-color: #1aa3ff;
     display:flex;
     justify-content:space-between;
 }
 
-.AccountList {
+.AppList {
     width: 96%;
     padding: 5px;
 }
 
-.AccountListItem {
+.AppListItem {
     background-color: #e6f5ff;
 }
 
-.AccountListItem:active {
+.AppListItem:active {
     background-color: #ccebff;
     justify-content: space-around;
 }
 
-.AddAccount {
+.AddItem {
     /*width: 50%;*/
     font-weight: bold;
     font-size: 1.5em;

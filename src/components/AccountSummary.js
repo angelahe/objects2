@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/Accounts.css';
+import '../styles/Styles140.css';
 import Accounts from './accounts';
 
 class AccountSummary extends React.Component {

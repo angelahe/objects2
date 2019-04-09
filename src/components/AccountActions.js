@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Accounts.css';
+import '../styles/Styles140.css';
 
 const AccountActions = (props) => {
 
@@ -7,23 +7,23 @@ const AccountActions = (props) => {
         const amount = Number(document.getElementById("amount").value);
         switch (e.target.getAttribute("elem")) {
             case "deposit":
-                props.deposit(amount, props.index);
+                props.deposit(amount, props.account);
                 break;
             case "withdraw":
-                props.withdraw(amount, props.index);
+                props.withdraw(amount, props.account);
                 break;
             default:
                 //do nothing
         }
     }
 
-    const accountName = props.AccountList.Accounts[props.index].acctName;
-    const accountBalance = props.AccountList.Accounts[props.index].balance;
+    const accountName = props.account.acctName;
+    const accountBalance = props.account.balance;
     return(
         <div>
-            <div className = "ItemBox AccountHeader">
-                <span className = "AddAccount">{accountName}</span>
-                <span className = "AddAccount">${accountBalance}</span>
+            <div className = "ItemBox AppHeader">
+                <span className = "AddItem">{accountName}</span>
+                <span className = "AddItem">${accountBalance}</span>
             </div>
             <div className = "ItemBox" onClick={handleClick}>
                 <span className = "DetailText">For Account Name:</span>

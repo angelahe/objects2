@@ -1,16 +1,13 @@
 import React from 'react';
-import '../styles/Accounts.css';
-import editbtn from "../images/edit_FFFFFF.png";
-import deletebtn from "../images/delete_FFFFFF.png";
+import '../styles/Styles140.css';
 
 const OneCommunity = (props) => {
   return (
-    <div className="ItemBox AccountListItem">
-        <h1>{props.item.Name}</h1>
-
-        <p className="DetailText">Latitude: {props.item.Latitude}</p>
-        <p className="DetailText">Longitude: {props.item.Longitude}</p>
-        <p className="DetailText">Population: {props.item.Population}</p>
+    <div className="ItemBox AppListItem">
+        <h2>{props.city.Name}</h2>
+        <span className="DetailText">Latitude: {props.city.Latitude}</span><br/>
+        <span className="DetailText">Longitude: {props.city.Longitude}</span><br/>
+        <span className="DetailText">Population: {props.city.Population}</span><br/>
         <hr/>
     </div>
   )

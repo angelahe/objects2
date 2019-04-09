@@ -1,12 +1,10 @@
 import React from 'react';
 import closebtn from '../images/close_FFFFFF.png';
-import "../styles/Accounts.css";
+import "../styles/Styles140.css";
 
 const AccountCreate = (props) => {
 
     console.log("props is ",props);
-    console.log("highest account is ", props.highestAccount);
-    console.log("highest account 2 is ", props.highestAccount);
 
     function handleCloseClick() {
         console.log("in handleCloseClick");
@@ -21,9 +19,9 @@ const AccountCreate = (props) => {
 
     return(
         <div>
-            <div className = "ItemBox AccountHeader">
-                <span className= "AddAccount">Add Account</span>
-                <button className="AccountBtn" onClick={handleCloseClick}>
+            <div className = "ItemBox AppHeader">
+                <span className= "AddItem">Add Account</span>
+                <button className="AppBtn" onClick={handleCloseClick}>
                     <img className="btnImg" src={closebtn} alt="Close"/>
                 </button>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Accounts.css';
+import '../styles/Styles140.css';
 import './community';
 
 const CommunitySummary = (props) => {

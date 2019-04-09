@@ -1,26 +1,22 @@
 import React from 'react';
-import '../styles/Accounts.css'
+import '../styles/Styles140.css'
 import deletebtn from '../images/delete_FFFFFF.png';
 
 const AccountDelete = (props) => {
 
-    console.log("in accountedit props is", props);
-    console.log("selected account is ", props.index);
-    console.log("account name is ", props.AccountList.Accounts[props.index].acctName);
-
     function handleDeleteClick() {
         console.log("in handleUpdateClick");
-        props.deleteAccount(Number(props.index));
+        props.deleteAccount(props.account);
     }
 
-    const accountName = props.AccountList.Accounts[props.index].acctName;
-    const accountBalance = props.AccountList.Accounts[props.index].balance;
+    const accountName = props.account.acctName;
+    const accountBalance = props.account.balance;
 
     return(
         <div>
-            <div className = "ItemBox AccountHeader">
-                <span className = "AddAccount">Delete Account</span>
-                <button className="AccountBtn "><img className="btnImg" src={deletebtn} alt="Add"/></button>
+            <div className = "ItemBox AppHeader">
+                <span className = "AddItem">Delete Account</span>
+                <button className="AppBtn "><img className="btnImg" src={deletebtn} alt="Add"/></button>
             </div>
             <div className = "ItemBox">
                 <span className = "DetailText">Account Name:</span>

@@ -10,7 +10,6 @@ import renderer from "react-test-renderer";
 
 
 const props = new AccountsUI();
-//const props = new Accounts();
 
 it('renders the min, max, and total balances', () => {
   let accountsList = new Accounts();

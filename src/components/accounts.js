@@ -11,7 +11,9 @@ class Accounts {
         return this.Accounts;
     }
 
-    deleteAccount(index) {
+    deleteAccount(account) {
+        const index = this.Accounts.findIndex(a => a.acctId === account.acctId);
+
         this.Accounts.splice(index, 1);
         return this.Accounts;
     }
@@ -23,26 +25,28 @@ class Accounts {
 
 
     //update the account balance of the account, return true on success, false on fail
-    withdrawFromAccount(index = -1, amount = 0) {
+    withdrawFromAccount(account, amount = 0) {
 
-        //on a non null account, withdraw the amount
-        if ((this.Accounts.length > index) &&  (index >= 0)) {
-            this.Accounts[index].withdraw(amount);
-            return(true);
+        const thisAccount = this.Accounts.find(a => a.acctId === account.acctId);
+        if (thisAccount) {
+            thisAccount.withdraw(amount);
+            return true;
         }
         else
-            return(false);
+            return false;
 
     }
 
     //update the account balance of the account, return true on success, false on fail
-    depositToAccount(index, amount) {
-        if ((this.Accounts.length > index) &&  (index >= 0)) {
-            this.Accounts[index].deposit(amount);
-            return(true);
+    depositToAccount(account, amount) {
+
+        const thisAccount = this.Accounts.find(a => a.acctId === account.acctId);
+        if (thisAccount) {
+            thisAccount.deposit(amount);
+            return true;
         }
         else
-            return(false);
+            return false;
     }
 
     //returns the balance of the lowest account, 0 if empty

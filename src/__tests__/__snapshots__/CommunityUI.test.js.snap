@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountsUI renders correctly 1`] = `
+<div>
+  <h1>
+    This is the Community UI
+  </h1>
+  <div
+    className="AppContainer"
+  >
+    <div
+      className="SummaryText"
+    >
+      <h2>
+        Community Summary
+      </h2>
+      <span>
+        Most Northern: 
+      </span>
+      <span>
+        
+      </span>
+      <br />
+      <span>
+        Most Southern: 
+      </span>
+      <span>
+        
+      </span>
+      <br />
+      <span>
+        Total Population:
+      </span>
+      <span>
+        0
+      </span>
+      <br />
+      <br />
+    </div>
+    <div
+      className="AppPanel"
+    >
+      <div
+        className="ItemBox AppHeader"
+      >
+        <span
+          className="AddItem"
+        >
+          Add City
+        </span>
+        <button
+          className="AppBtn"
+          onClick={[Function]}
+        >
+          <img
+            alt="Add"
+            className="btnImg"
+            src="add_FFFFFF.png"
+          />
+        </button>
+      </div>
+      <div
+        className="AppList"
+      />
+    </div>
+    <div
+      className="AppPanel"
+    />
+  </div>
+</div>
+`;

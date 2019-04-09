@@ -9,7 +9,7 @@ import AccountListItem from './AccountListItem';
 import AccountActions from './AccountActions';
 import addbtn from '../images/add_FFFFFF.png';
 
-import '../styles/Accounts.css';
+import '../styles/Styles140.css';
 
 
 class AccountsUI extends React.Component {
@@ -19,6 +19,8 @@ class AccountsUI extends React.Component {
         this.state = {
             AccountList: new Accounts(),
             nextId: 0,
+            currentSelected: 0,
+            currentAccount: null,
             addAccount: false,
             editShow: false,
             deleteShow: false,
@@ -61,93 +63,86 @@ class AccountsUI extends React.Component {
     }
 
     onAccountUpdate = (name, balance, index) => {
-
-        const AccountListCopy = this.makeAccountCopy();
-        AccountListCopy.updateAccount(index, new Account(balance, name, AccountListCopy.Accounts[index].acctId));
+        this.state.AccountList.updateAccount(index, new Account(balance, name, this.state.AccountList.Accounts[index].acctId));
 
         this.setState({
-            AccountList: AccountListCopy,
+            AccountList: this.state.AccountList,
             editShow: !this.state.editShow
         });
     }
 
-    onDeleteClick = (acctIndex) => {
+    onDeleteClick = (account) => {
         this.setState({
             deleteShow: true,
-            currentSelected: acctIndex
+            currentAccount: account
         });
     }
 
-    onDeleteAccount = (acctIndex) => {
-        const AccountListCopy = this.makeAccountCopy();
-        AccountListCopy.deleteAccount(acctIndex);
+    onDeleteAccount = (account) => {
+        this.state.AccountList.deleteAccount(account);
 
         this.setState({
-            AccountList: AccountListCopy,
+            AccountList: this.state.AccountList,
             deleteShow: false,
-            currentSelected: 0
+            currentAccount: this.state.AccountList[0]
         });
     }
 
-    onAccountClick = (acctIndex) => {
+    onAccountClick = (account) => {
         this.setState({
             accountActionsShow: true,
-            currentSelected: acctIndex
+            currentAccount: account
         })
     }
 
-    onDepositToAccount = (amount, acctIndex) => {
-        const AccountListCopy = this.makeAccountCopy();
-        AccountListCopy.depositToAccount(acctIndex, amount);
+    onDepositToAccount = (amount, account) => {
+        this.state.AccountList.depositToAccount(account, amount);
 
         this.setState({
-            AccountList: AccountListCopy,
+            AccountList: this.state.AccountList,
             accountActionsShow: false,
         });
     }
 
-    onWithdrawFromAccount = (amount, acctIndex) => {
-        const AccountListCopy = this.makeAccountCopy();
-        AccountListCopy.withdrawFromAccount(acctIndex, amount);
+    onWithdrawFromAccount = (amount, account) => {
+        this.state.AccountList.withdrawFromAccount(account, amount);
 
         this.setState({
-            AccountList: AccountListCopy,
+            AccountList: this.state.AccountList,
             accountActionsShow: false
         });
     }
 
     render() {
 
-//        console.log("Account list items are ", this.state.AccountList);
         console.log("addAccount is ", this.state.addAccount);
         const accountListItems = this.state.AccountList.Accounts.map((item, index) =>
            <AccountListItem key={item.acctId}
                             index = {index}
-                            item={item}
+                            account={item}
                             accountClicked={this.onAccountClick}
                             editClicked={this.onEditClick}
                             deleteClicked={this.onDeleteClick}
            />
         );
-//<AccountSummary accounts={this.state.AccountList.Accounts} />
 
         return(
             <div>
                 <h1>Hello from Accounts</h1>
-                <div className = "AccountContainer">
+                <div className = "AppContainer">
                     <AccountSummary accounts={this.state.AccountList} />
-                    <div className = "AccountPanel">
-                          <div className = "ItemBox AccountHeader">
-                            <span className = "AddAccount">Add Account</span>
-                            <button className="AccountBtn" onClick={this.onBtnAddClick}>
+                    <div className = "AppPanel">
+                          <div className = "ItemBox AppHeader">
+                            <span className = "AddItem">Add Account</span>
+                            <button className="AppBtn" onClick={this.onBtnAddClick}>
                                 <img className="btnImg" src={addbtn} alt="Add"/>
             `                    </button>
                           </div>
-                        <div className = "AccountList">
+                        <div className = "AppList">
                             {accountListItems}
                         </div>
                     </div>
-                    <div className = "AccountPanel">
+                    <div className = "AppPanel">
                         {(this.state.addAccount)
                             ? <AccountCreate {...this.state}
                                              createClicked = {this.onAccountCreate}
@@ -160,14 +155,14 @@ class AccountsUI extends React.Component {
                               />
                             :null }
                         {(this.state.deleteShow)
-                            ? <AccountDelete {...this.state}
-                                           index = {this.state.currentSelected}
+                            ? <AccountDelete
+                                           account={this.state.currentAccount}
                                            deleteAccount = {this.onDeleteAccount}
                               />
                             :null }
                         {(this.state.accountActionsShow)
-                            ? <AccountActions {...this.state}
-                                              index={this.state.currentSelected}
+                            ? <AccountActions
+                                              account={this.state.currentAccount}
                                               deposit={this.onDepositToAccount}
                                               withdraw={this.onWithdrawFromAccount}
                             />

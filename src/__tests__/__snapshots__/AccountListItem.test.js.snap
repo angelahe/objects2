@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountUI renders correctly 1`] = `
+<div
+  className="ItemBox AppListItem"
+  elemtype="Container"
+  idindex={1}
+  onClick={[Function]}
+>
+  <span
+    className="DetailText"
+    elemtype="Text"
+  >
+    Savings $1000
+  </span>
+  <button
+    className="AppBtn"
+    elemtype="Edit"
+  >
+    <img
+      alt="Add"
+      className="btnImg"
+      elemtype="Edit Image"
+      src="edit_FFFFFF.png"
+    />
+  </button>
+  <button
+    className="AppBtn Delete"
+    elemtype="Delete"
+  >
+    <img
+      alt="Add"
+      className="btnImg"
+      elemtype="Delete Image"
+      src="delete_FFFFFF.png"
+    />
+  </button>
+  <hr />
+</div>
+`;

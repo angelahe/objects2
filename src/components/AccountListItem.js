@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Accounts.css';
+import '../styles/Styles140.css';
 import editbtn from '../images/edit_FFFFFF.png';
 import deletebtn from '../images/delete_FFFFFF.png';
 
@@ -7,6 +7,7 @@ const AccountListItem = (props) => {
 
     function handleAccountClick(e) {
         console.log("in handleclick function AccountList");
+        console.log("props is", props);
 
         let acctIndex = NaN;
 
@@ -25,15 +26,13 @@ const AccountListItem = (props) => {
                 break;
             case "Delete Image":
                 acctIndex = e.target.parentNode.parentNode.getAttribute("idindex");
-                props.deleteClicked(acctIndex);
+                props.deleteClicked(props.account);
                 break;
             case "Container":
-                acctIndex = e.target.getAttribute("idindex");
-                props.accountClicked(acctIndex);
+                props.accountClicked(props.account);
                 break;
             case "Text":
-                acctIndex = e.target.parentNode.getAttribute("idindex");
-                props.accountClicked(acctIndex);
+                props.accountClicked(props.account);
                 break;
             default:
                 console.log("unknown element was clicked");
@@ -42,13 +41,13 @@ const AccountListItem = (props) => {
 //fixing index from key to actual index idindex={props.item.acctId} to props.index
 
     return (
-        <div className="ItemBox AccountListItem" elemtype = "Container" idindex={props.index}
+        <div className="ItemBox AppListItem" elemtype = "Container" idindex={props.index}
              onClick={handleAccountClick}>
-            <span className="DetailText" elemtype = "Text">{props.item.acctName + " $" + props.item.balance}</span>
-            <button className="AccountBtn" elemtype = "Edit">
+            <span className="DetailText" elemtype = "Text">{props.account.acctName + " $" + props.account.balance}</span>
+            <button className="AppBtn" elemtype = "Edit">
                 <img className="btnImg" elemtype = "Edit Image" src={editbtn} alt="Add"/>
             </button>
-            <button className="AccountBtn Delete" elemtype = "Delete">
+            <button className="AppBtn Delete" elemtype = "Delete">
                 <img className="btnImg" elemtype = "Delete Image" src={deletebtn} alt="Add"/>
             </button>
             <hr/>

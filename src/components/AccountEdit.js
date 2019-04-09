@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Accounts.css'
+import '../styles/Styles140.css'
 import editbtn from '../images/edit_FFFFFF.png'
 
 const AccountEdit = (props) => {
@@ -22,9 +22,9 @@ const AccountEdit = (props) => {
 
     return(
         <div>
-            <div className = "ItemBox AccountHeader">
-                <span className = "AddAccount">Edit Account</span>
-                <button className="AccountBtn "><img className="btnImg" src={editbtn} alt="Add"/></button>
+            <div className = "ItemBox AppHeader">
+                <span className = "AddItem">Edit Account</span>
+                <button className="AppBtn "><img className="btnImg" src={editbtn} alt="Add"/></button>
             </div>
             <div className = "ItemBox">
                 <span className = "DetailText">Account Name:</span>

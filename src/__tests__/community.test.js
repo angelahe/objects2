@@ -22,17 +22,17 @@ test('Test the whichSphere function', () => {
   expect(newCommunity.whichSphere(2)).toBe("Northern Hemisphere");
   expect(newCommunity.whichSphere(3)).toBe("Southern Hemisphere");
 
-})
+});
 
 test('Test the getMostNorthern function', () => {
  expect(newCommunity.getMostNorthern()).toBe("Edmonton");
-})
+});
 
 test('Test the getMostSouthern function', () => {
   expect(newCommunity.getMostSouthern()).toBe("Auckland");
-})
+});
 
 test('Test the getPopulation function', () => {
   expect(newCommunity.getPopulation()).toBe(8237550)
-})
+});
 

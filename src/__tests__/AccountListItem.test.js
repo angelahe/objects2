@@ -3,21 +3,48 @@ import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import AccountsUI from "../components/AccountsUI";
 import AccountListItem from "../components/AccountListItem";
-import '../styles/Accounts.css'
+import '../styles/Styles140.css'
 
 import renderer from "react-test-renderer";
 
-xit('renders without crashing', () => {
+const props = new AccountsUI();
+const item = {acctId : 1,
+              acctName: "Savings",
+              balance: 1000};
+
+const index = 1;
+
+
+it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<AccountListItem />, div);
+  ReactDOM.render(<AccountListItem key={item.acctId}
+                                   index = {index}
+                                   account={item}
+                                   accountClicked={props.onAccountClick}
+                                   editClicked={props.onEditClick}
+                                   deleteClicked={props.onDeleteClick}
+  />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
-xit('renders without crashing', () => {
-  shallow(<AccountListItem />);
+it('renders without crashing', () => {
+  shallow(<AccountListItem key={item.acctId}
+                           index = {index}
+                           account={item}
+                           accountClicked={props.onAccountClick}
+                           editClicked={props.onEditClick}
+                           deleteClicked={props.onDeleteClick}
+  />);
 });
 
-xtest('AccountUI renders correctly', () => {
-  const tree = renderer.create(<AccountListItem />).toJSON();
+test('AccountUI renders correctly', () => {
+  const tree = renderer.create(<AccountListItem key={item.acctId}
+                                                index = {index}
+                                                account={item}
+                                                accountClicked={props.onAccountClick}
+                                                editClicked={props.onEditClick}
+                                                deleteClicked={props.onDeleteClick}
+
+  />).toJSON();
   expect(tree).toMatchSnapshot();
 });
