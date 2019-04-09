@@ -38,29 +38,29 @@ class AccountsUI extends React.Component {
         this.setState ({addAccount: changeState});
     }
 
-    onAccountCreate = (name, balance) => {
-        const addthis = new Account(balance, name, this.state.nextId);
+    //make a copy of the current AccountList in state
+    makeAccountCopy = () => {
         const AccountListCopy = new Accounts();
-        const changeState = !this.state.addAccount;
-        const nextId = this.state.nextId;
-        console.log("nextid is ", nextId);
-        //make a copy of Accountlist to have setState work properly
         for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
             AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
         }
-        AccountListCopy.addAccount(addthis);
-        console.log("in onAccountCreate length of array is ", AccountListCopy.Accounts.length);
+        return AccountListCopy;
+
+    }
+
+    onAccountCreate = (name, balance) => {
+        const AccountListCopy = this.makeAccountCopy();
+        AccountListCopy.addAccount(new Account(balance, name, this.state.nextId));
+
         this.setState({
             AccountList: AccountListCopy,
             accountNumber: AccountListCopy.Accounts.length,
-            addAccount: changeState,
-            nextId: nextId + 1
+            addAccount: !this.state.addAccount,
+            nextId: this.state.nextId + 1
         });
     }
 
     onEditClick = (acctIndex) => {
-        console.log("in Edit Click", acctIndex);
-        console.log("editShow is ", this.state.editShow);
         this.setState({
             editShow: !this.state.editShow,
             currentSelected: acctIndex
