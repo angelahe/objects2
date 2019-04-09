@@ -13,32 +13,26 @@ const AccountListItem = (props) => {
         switch (e.target.getAttribute("elemtype")) {
             case "Edit":
                 acctIndex = e.target.parentNode.getAttribute("idindex");
-                console.log("edit button was clicked index is ", acctIndex);
                 props.editClicked(acctIndex);
                 break;
             case "Delete":
                 acctIndex = e.target.parentNode.getAttribute("idindex");
-                console.log("delete button was clicked index is ", acctIndex);
                 props.deleteClicked(acctIndex);
                 break;
             case "Edit Image":
                 acctIndex = e.target.parentNode.parentNode.getAttribute("idindex");
-                console.log("edit image was clicked index is ", acctIndex);
                 props.editClicked(acctIndex);
                 break;
             case "Delete Image":
                 acctIndex = e.target.parentNode.parentNode.getAttribute("idindex");
-                console.log("delete image was clicked index is ", acctIndex);
                 props.deleteClicked(acctIndex);
                 break;
             case "Container":
                 acctIndex = e.target.getAttribute("idindex");
-                console.log("container was clicked index is ", acctIndex);
                 props.accountClicked(acctIndex);
                 break;
             case "Text":
                 acctIndex = e.target.parentNode.getAttribute("idindex");
-                console.log("detail text was clicked index is ", acctIndex);
                 props.accountClicked(acctIndex);
                 break;
             default:

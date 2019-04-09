@@ -7,9 +7,7 @@ class Accounts {
 
     addAccount(newAccount) {
         //this should call account to create new account - balance, name, etc passed in
-        console.log("in addAccount");
         this.Accounts.push(newAccount);
-        console.log("accounts is", this.Accounts);
         return this.Accounts;
     }
 
@@ -17,6 +15,12 @@ class Accounts {
         this.Accounts.splice(index, 1);
         return this.Accounts;
     }
+
+    updateAccount(index, newInfo) {
+        this.Accounts[index] = newInfo;
+        return this.Accounts;
+    }
+
 
     //update the account balance of the account, return true on success, false on fail
     withdrawFromAccount(index = -1, amount = 0) {
@@ -53,14 +57,6 @@ class Accounts {
             }
         }
 
-        //let len = this.Accounts.length, min = Infinity, index = Infinity;
-
-        //while (len--) {
-        //    if (this.Accounts[len].balance < min) {
-        //        min = this.Accounts[len].balance;
-        //        index = len;
-        //    }
-        //}
         return(min !== Infinity ? min : 0);
 
     }

@@ -61,22 +61,13 @@ class AccountsUI extends React.Component {
     }
 
     onAccountUpdate = (name, balance, index) => {
-        console.log("in account update with: ", name, balance, index);
-        const updateWithThis = new Account(balance, name, index);
-        const AccountListCopy = new Accounts();
-        const changeState = !this.state.editShow;
 
-        //make a copy of Accountlist, replacing the edited account
-        for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
-            if(i === index)
-                AccountListCopy.addAccount(updateWithThis);
-            else
-                AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
-        }
+        const AccountListCopy = this.makeAccountCopy();
+        AccountListCopy.updateAccount(index, new Account(balance, name, AccountListCopy.Accounts[index].acctId));
 
         this.setState({
             AccountList: AccountListCopy,
-            editShow: changeState
+            editShow: !this.state.editShow
         });
     }
 
