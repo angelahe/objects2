@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e53f95e5-9c18-4842-937c-656e57be09c8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CommunitySummary.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OneCommunity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/community.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/community.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccountSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountSummary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountsUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountsUI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CommunityUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommunityUI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accounts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/community.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/community.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,37 +17,10 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/__tests__/AccountActions.test.js">
+            <entry file="file://$PROJECT_DIR$/src/components/account.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="270">
-                  <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/__tests__/AccountCreate.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/__tests__/AccountDelete.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
+                  <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -62,8 +28,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/accounts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+                <state relative-caret-position="623">
+                  <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/AccountUI.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -80,8 +58,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/__tests__/AccountsUI.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+                <state relative-caret-position="120">
+                  <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -89,11 +67,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/CommunityUI.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="194">
-                  <caret line="19" column="118" selection-start-line="19" selection-start-column="118" selection-end-line="19" selection-end-column="118" />
+                  <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -125,6 +103,18 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/__tests__/AccountSummary.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/__tests__/AccountUI.test.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -144,8 +134,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+                <state relative-caret-position="367">
+                  <caret line="167" column="9" selection-start-line="165" selection-start-column="8" selection-end-line="167" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -180,8 +170,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/AccountSummary.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+                <state relative-caret-position="360">
+                  <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -292,33 +282,33 @@
         <option value="$PROJECT_DIR$/src/components/AccountCreate.js" />
         <option value="$PROJECT_DIR$/src/components/AccountDelete.js" />
         <option value="$PROJECT_DIR$/src/components/AccountActions.js" />
-        <option value="$PROJECT_DIR$/src/components/AccountSummary.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountsUI.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountListItem.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountActions.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountCreate.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountDelete.test.js" />
         <option value="$PROJECT_DIR$/src/components/AccountEdit.js" />
-        <option value="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountEdit.test.js" />
         <option value="$PROJECT_DIR$/src/components/NavBar.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/city.js" />
         <option value="$PROJECT_DIR$/src/__tests__/city.test.js" />
         <option value="$PROJECT_DIR$/src/components/accounts.js" />
-        <option value="$PROJECT_DIR$/src/components/AccountsUI.js" />
         <option value="$PROJECT_DIR$/src/components/OneCommunity.js" />
         <option value="$PROJECT_DIR$/src/__tests__/community.test.js" />
         <option value="$PROJECT_DIR$/src/components/community.js" />
         <option value="$PROJECT_DIR$/src/components/CommunitySummary.js" />
         <option value="$PROJECT_DIR$/src/components/CommunityUI.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountSummary.js" />
+        <option value="$PROJECT_DIR$/src/components/AccountsUI.js" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1602" />
     <option name="height" value="988" />
@@ -378,6 +368,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -399,6 +390,65 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Jest.renders the min, max, and total balances">
+    <configuration name="AccountSummary.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="renders a summary with no accounts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" />
+      <test-names>
+        <test-name value="renders a summary with no accounts" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders the min, max, and total balances" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" />
+      <test-names>
+        <test-name value="renders the min, max, and total balances" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/AccountSummary.test.js" />
+      <test-names>
+        <test-name value="renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.renders the min, max, and total balances" />
+        <item itemvalue="Jest.renders a summary with no accounts" />
+        <item itemvalue="Jest.renders without crashing" />
+        <item itemvalue="Jest.AccountSummary.test.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -413,25 +463,57 @@
       <workItem from="1552340138642" duration="75048000" />
       <workItem from="1553101651570" duration="6863000" />
       <workItem from="1554073935112" duration="16039000" />
-      <workItem from="1554649069489" duration="17234000" />
+      <workItem from="1554649069489" duration="23990000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="renders_without_crashing - 2019.04.08 at 19h 28m 16s.xml">
+      <configuration name="renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_without_crashing - 2019.04.08 at 19h 28m 42s.xml">
+      <configuration name="renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_a_summary_with_no_accounts - 2019.04.08 at 19h 30m 34s.xml">
+      <configuration name="renders a summary with no accounts" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_a_summary_with_no_accounts - 2019.04.08 at 19h 30m 52s.xml">
+      <configuration name="renders a summary with no accounts" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_a_summary_with_no_accounts - 2019.04.08 at 19h 31m 59s.xml">
+      <configuration name="renders a summary with no accounts" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_the_min,_max,_and_total_balances - 2019.04.08 at 19h 39m 24s.xml">
+      <configuration name="renders the min, max, and total balances" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_the_min,_max,_and_total_balances - 2019.04.08 at 19h 40m 52s.xml">
+      <configuration name="renders the min, max, and total balances" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_the_min,_max,_and_total_balances - 2019.04.08 at 19h 46m 19s.xml">
+      <configuration name="renders the min, max, and total balances" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_the_min,_max,_and_total_balances - 2019.04.08 at 19h 48m 36s.xml">
+      <configuration name="renders the min, max, and total balances" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_the_min,_max,_and_total_balances - 2019.04.08 at 19h 49m 35s.xml">
+      <configuration name="renders the min, max, and total balances" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124444000" />
+    <option name="totallyTimeSpent" value="131200000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" order="0" weight="0.20171674" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Project" order="0" visible="true" weight="0.11199365" />
+      <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.19747587" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32962137" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39940608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -622,26 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountUI.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/account.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountSummary.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/accounts.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -699,13 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/accounts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/AccountUI.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -733,16 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountSummary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/OneCommunity.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -759,16 +804,6 @@
           <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountsUI.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -790,20 +825,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
+    <entry file="file://$PROJECT_DIR$/src/components/CommunityUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="194">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CommunityUI.js">
+    <entry file="file://$PROJECT_DIR$/src/components/AccountUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="19" column="118" selection-start-line="19" selection-start-column="118" selection-end-line="19" selection-end-column="118" />
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountsUI.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/account.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/accounts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountSummary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/AccountSummary.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="167" column="9" selection-start-line="165" selection-start-column="8" selection-end-line="167" selection-end-column="9" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

@@ -209,7 +209,7 @@ class AccountsUI extends React.Component {
             <div>
                 <h1>Hello from Accounts</h1>
                 <div className = "AccountContainer">
-                    <AccountSummary {...this.state}/>
+                    <AccountSummary accounts={this.state.AccountList.Accounts} />
                     <div className = "AccountPanel">
                           <div className = "ItemBox AccountHeader">
                             <span className = "AddAccount">Add Account</span>
