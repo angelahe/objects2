@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/Accounts.css';
+import Accounts from './accounts';
 
 class AccountSummary extends React.Component {
   constructor(props) {
@@ -15,13 +16,17 @@ class AccountSummary extends React.Component {
     let min = Infinity;
     let max = 0;
     let total = 0;
-    accounts.forEach(account => {
-        min = Math.min(account.getbalance(), min);
-        max = Math.max(account.getbalance(), max);
-        total += account.getbalance();
-    });
+    min = accounts.getMinAccount();
+    max = accounts.getMaxAccount();
+    total = accounts.getAccountTotal();
+
+//    accounts.forEach(account => {
+//        min = Math.min(account.getbalance(), min);
+//        max = Math.max(account.getbalance(), max);
+//        total += account.getbalance();
+//    });
     return {
-      lowest: accounts.length > 0 ? min : 0,
+      lowest: min,
       highest: max,
       total: total
     };

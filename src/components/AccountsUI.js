@@ -204,12 +204,13 @@ class AccountsUI extends React.Component {
                             deleteClicked={this.onDeleteClick}
            />
         );
+//<AccountSummary accounts={this.state.AccountList.Accounts} />
 
         return(
             <div>
                 <h1>Hello from Accounts</h1>
                 <div className = "AccountContainer">
-                    <AccountSummary accounts={this.state.AccountList.Accounts} />
+                    <AccountSummary accounts={this.state.AccountList} />
                     <div className = "AccountPanel">
                           <div className = "ItemBox AccountHeader">
                             <span className = "AddAccount">Add Account</span>

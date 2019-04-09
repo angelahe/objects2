@@ -45,19 +45,19 @@ test("Test AccountController getMinAccount module", () => {
     const newAccount2 = new Account(15, "John", 2);
     const newAccount4 = new Account(5, "Mary", 3);
     const newAccountController = new Accounts();
-    console.log("With empty accounts array returns Infinity");
-    expect(newAccountController.getMinAccount()).toBe(Infinity);
-    newAccountController.addAccount(newAccount3);
-    console.log("Test that with an array with 1 item returns 0");
+    console.log("With empty accounts array returns 0");
     expect(newAccountController.getMinAccount()).toBe(0);
+    newAccountController.addAccount(newAccount3);
+    console.log("Test that with an array with 1 item returns balance of that item");
+    expect(newAccountController.getMinAccount()).toBe(25);
     newAccountController.addAccount(newAccount1);
-    console.log("Test that an array of 2 items with 2nd item as minimum returns 1");
-    expect(newAccountController.getMinAccount()).toBe(1);
+    console.log("Test that an array of 2 items with 2nd item as minimum returns that balance");
+    expect(newAccountController.getMinAccount()).toBe(10);
     newAccountController.addAccount(newAccount2);
-    expect(newAccountController.getMinAccount()).toBe(1);
+    expect(newAccountController.getMinAccount()).toBe(10);
     newAccountController.addAccount(newAccount4);
-    console.log("Test that last item in array is the minimum ie returns 3");
-    expect(newAccountController.getMinAccount()).toBe(3);
+    console.log("Test that last item in array is the minimum ie returns that balance");
+    expect(newAccountController.getMinAccount()).toBe(5);
 });
 
 test("Test AccountController getmaxAccount module", () => {
@@ -66,18 +66,18 @@ test("Test AccountController getmaxAccount module", () => {
     const newAccount3 = new Account(45, "Andrew", 2);
     const newAccount4 = new Account(35, "Mary", 3);
     const newAccountController = new Accounts();
-    console.log("With empty accounts array returns Infinity");
-    expect(newAccountController.getMaxAccount()).toBe(Infinity);
+    console.log("With empty accounts array returns 0");
+    expect(newAccountController.getMaxAccount()).toBe(0);
     newAccountController.addAccount(newAccount1);
     console.log("With one account returns 0 as index of highest account");
-    expect(newAccountController.getMaxAccount()).toBe(0);
+    expect(newAccountController.getMaxAccount()).toBe(10);
     newAccountController.addAccount(newAccount2);
     console.log("With two accounts and last one is the highest returns index 1");
-    expect(newAccountController.getMaxAccount()).toBe(1);
+    expect(newAccountController.getMaxAccount()).toBe(15);
     newAccountController.addAccount(newAccount3);
     newAccountController.addAccount(newAccount4);
     console.log("returns index in middle of array, in this case 2 as highest index");
-    expect(newAccountController.getMaxAccount()).toBe(2);
+    expect(newAccountController.getMaxAccount()).toBe(45);
 });
 
 test("Test AccountController getAccountTotal module", () => {

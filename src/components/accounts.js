@@ -41,7 +41,7 @@ class Accounts {
             return(false);
     }
 
-    //returns the index to the account with the lowest balance, or first lowest item if tied
+    //returns the balance of the lowest account, 0 if empty
     getMinAccount() {
 
         let len = this.Accounts.length, min = Infinity, index = Infinity;
@@ -52,7 +52,16 @@ class Accounts {
                 index = len;
             }
         }
-        return(index);
+
+        //let len = this.Accounts.length, min = Infinity, index = Infinity;
+
+        //while (len--) {
+        //    if (this.Accounts[len].balance < min) {
+        //        min = this.Accounts[len].balance;
+        //        index = len;
+        //    }
+        //}
+        return(min !== Infinity ? min : 0);
 
     }
 
@@ -67,10 +76,8 @@ class Accounts {
                 index = len;
             }
         }
-        return(index);
+        return(max);
 
-
-        //return(0);
     }
 
     getAccountTotal() {
