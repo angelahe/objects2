@@ -4,14 +4,12 @@ import "../styles/Styles140.css";
 
 const AccountCreate = (props) => {
 
-    console.log("props is ",props);
-
     function handleCloseClick() {
         console.log("in handleCloseClick");
     }
 
     function handleAddClick() {
-        console.log("in handleAddClick function");
+//        console.log("in handleAddClick function");
         const name = document.getElementById("acctName").value;
         const balance = Number(document.getElementById("acctBalance").value);
         props.createClicked(name, balance)

@@ -145,8 +145,7 @@ class AccountsUI extends React.Component {
                     </div>
                     <div className = "AppPanel">
                         {(this.state.addAccount)
-                            ? <AccountCreate {...this.state}
-                                             createClicked = {this.onAccountCreate}
+                            ? <AccountCreate createClicked = {this.onAccountCreate}
                               />
                             : null }
                         {(this.state.editShow)

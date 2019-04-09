@@ -8,50 +8,55 @@ exports[`AccountUI renders correctly 1`] = `
     <span
       className="AddItem"
     >
-      Add Account
+      Savings
     </span>
-    <button
-      className="AppBtn"
-      onClick={[Function]}
+    <span
+      className="AddItem"
     >
-      <img
-        alt="Close"
-        className="btnImg"
-        src="close_FFFFFF.png"
-      />
-    </button>
+      $
+      1000
+    </span>
   </div>
   <div
     className="ItemBox"
+    onClick={[Function]}
   >
     <span
       className="DetailText"
     >
-      Account Name:
+      For Account Name:
     </span>
-    <input
-      autoFocus={true}
-      className="InputText"
-      id="acctName"
-    />
+    <span
+      className="DetailText"
+    >
+      Savings
+    </span>
+    <br />
     <br />
     <span
       className="DetailText"
     >
-      Start Balance:
+      Amount:
     </span>
     <input
       className="InputText"
-      id="acctBalance"
+      id="amount"
+      placeholder="Enter an amount"
       type="number"
     />
     <br />
     <br />
     <button
       className="btnText"
-      onClick={[Function]}
+      elem="deposit"
     >
-      Create Account
+      Deposit
+    </button>
+    <button
+      className="btnText"
+      elem="withdraw"
+    >
+      Withdraw
     </button>
   </div>
 </div>
