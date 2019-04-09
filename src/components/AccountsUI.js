@@ -99,7 +99,6 @@ class AccountsUI extends React.Component {
     }
 
     onAccountClick = (acctIndex) => {
-        console.log("in account click", acctIndex);
         this.setState({
             accountActionsShow: true,
             currentSelected: acctIndex
@@ -107,12 +106,9 @@ class AccountsUI extends React.Component {
     }
 
     onDepositToAccount = (amount, acctIndex) => {
-        console.log("in onDepositToAccount");
-        const AccountListCopy = new Accounts();
-        for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
-            AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
-        }
+        const AccountListCopy = this.makeAccountCopy();
         AccountListCopy.depositToAccount(acctIndex, amount);
+
         this.setState({
             AccountList: AccountListCopy,
             accountActionsShow: false,
@@ -120,13 +116,9 @@ class AccountsUI extends React.Component {
     }
 
     onWithdrawFromAccount = (amount, acctIndex) => {
-        console.log("in onWithdrawFromAccount for of ", amount, acctIndex);
-        const AccountListCopy = new Accounts();
-        for(let i=0; i<this.state.AccountList.Accounts.length; i++) {
-            if (i!== acctIndex)
-                AccountListCopy.addAccount(this.state.AccountList.Accounts[i]);
-        }
+        const AccountListCopy = this.makeAccountCopy();
         AccountListCopy.withdrawFromAccount(acctIndex, amount);
+
         this.setState({
             AccountList: AccountListCopy,
             accountActionsShow: false
