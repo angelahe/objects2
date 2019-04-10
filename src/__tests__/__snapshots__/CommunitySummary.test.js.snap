@@ -1,33 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AccountSummary renders correctly 1`] = `
+exports[`CommunitySummary renders correctly 1`] = `
 <div
   className="SummaryText"
 >
   <h2>
-    Accounts Summary
+    Community Summary
   </h2>
   <span>
-    Lowest Account: 
+    Most Northern: 
   </span>
   <span>
-    $
-    0
-  </span>
-  <br />
-  <span>
-    Highest Account: 
-  </span>
-  <span>
-    $
-    0
+    
   </span>
   <br />
   <span>
-    Total Balance:
+    Most Southern: 
   </span>
   <span>
-    $
+    
+  </span>
+  <br />
+  <span>
+    Total Population:
+  </span>
+  <span>
     0
   </span>
   <br />

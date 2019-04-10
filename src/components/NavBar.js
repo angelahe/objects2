@@ -10,9 +10,9 @@ import teamwork2 from '../images/teamwork2.svg';
 const NavBar = (props) => {
 
     function handleClick(e) {
-        console.log("in handleClick function");
-        console.log(props.navClicked);
-        props.navClicked(e.target.getAttribute("navbtn"));
+        const whichOne = e.target.getAttribute("navbtn");
+//      props.navClicked(e.target.getAttribute("navbtn"));
+        props.navClicked(whichOne);
     }
 
     return (

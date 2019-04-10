@@ -6,8 +6,6 @@ import AccountsUI from "../components/AccountsUI";
 import account from "../components/account";
 import Accounts from "../components/accounts";
 import renderer from "react-test-renderer";
-//import AccountCreate from "../components/AccountCreate";
-
 
 const props = new AccountsUI();
 
@@ -38,7 +36,7 @@ it('renders a summary with no accounts', () => {
   expect(wrapper.state('lowest')).toEqual(0);
 });
 
-test('AccountUI renders correctly', () => {
+test('AccountSummary renders correctly', () => {
   const tree = renderer.create(<AccountSummary accounts={props.state.AccountList} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

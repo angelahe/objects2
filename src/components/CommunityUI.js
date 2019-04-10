@@ -1,6 +1,7 @@
 import React from 'react';
 import community from './community';
 import CityCreate from './CityCreate';
+import CityEdit from './CityEdit';
 import OneCommunity from './OneCommunity';
 import CommunitySummary from './CommunitySummary';
 import addbtn from '../images/add_FFFFFF.png';
@@ -12,18 +13,36 @@ class CommunityUI extends React.Component {
     super(props)
     this.state = {
       CommunityList: new community(),
-      counter : 0,
-      addShow: false
+      currentCity: null,
+      addShow: false,
+      editShow: false
     }
+  }
 
-    this.increment = () => this.setState({counter: this.state.counter+1});
-    this.decrement = () => this.setState({counter: this.state.counter-1});
-    //this.addCommunity = () => this.setState({CommunityList : this.state.CommunityList.addCommunity(cityname, latitude, longitude, population)});
+  onBtnCloseClick = (closeType) => {
+    if (closeType === "create") this.setState ({addShow: false});
+    if (closeType === "edit") this.setState ({editShow: false});
   }
 
   onBtnAddClick = () => {
     this.setState({addShow: true});
   }
+
+  onBtnEditClick = () => {
+    this.setState({editShow: true});
+  }
+
+  onCityUpdate = (updated) => {
+    console.log("in city update");
+    this.state.CommunityList.updateCommunity(updated);
+
+    this.setState({
+      CommunityList: this.state.CommunityList,
+      editShow: false
+    })
+
+  }
+
 
   onCityCreate = (name, latitude, longitude, population) => {
     this.state.CommunityList.addCommunity(name, latitude, longitude, population);
@@ -37,7 +56,7 @@ class CommunityUI extends React.Component {
   }
 
   render() {
-    const communities = this.state.CommunityList.Community.map((city, index) =>
+    const communities = this.state.CommunityList.Communities.map((city, index) =>
     <OneCommunity key = {city.Name}
                   city = {city}
     />
@@ -48,7 +67,7 @@ class CommunityUI extends React.Component {
 
         <h1>This is the Community UI</h1>
         <div className="AppContainer">
-          <CommunitySummary {...this.state}/>
+          <CommunitySummary communities={this.state.CommunityList}/>
           <div className="AppPanel">
             <div className="ItemBox AppHeader">
               <span className="AddItem">Add City</span>
@@ -62,9 +81,19 @@ class CommunityUI extends React.Component {
           </div>
           <div className = "AppPanel">
             {(this.state.addShow)
-              ? <CityCreate createClicked = {this.onCityCreate} />
+              ? <CityCreate createClicked = {this.onCityCreate}
+                            closeClicked={this.onBtnCloseClick}
+                />
               :null
             }
+            {(this.state.editShow)
+              ? <CityEdit
+                         city={this.state.currentCity}
+                         updateCity = {this.onCityUpdate}
+                         closeClicked={this.onBtnCloseClick}
+                />
+              : null
+              }
           </div>
 
         </div>

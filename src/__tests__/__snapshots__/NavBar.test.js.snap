@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MathComp renders correctly 1`] = `
+<div>
+  <header>
+    <img
+      alt="one"
+      className="App-icon"
+      navbtn="default"
+      onClick={[Function]}
+      src="analytics.svg"
+    />
+    <img
+      alt="two"
+      className="App-icon"
+      navbtn="math"
+      onClick={[Function]}
+      src="creative.svg"
+    />
+    <img
+      alt="three"
+      className="App-icon"
+      navbtn="account"
+      onClick={[Function]}
+      src="leader.svg"
+    />
+    <img
+      alt="four"
+      className="App-icon"
+      navbtn="accounts"
+      onClick={[Function]}
+      src="teamwork.svg"
+    />
+    <img
+      alt="five"
+      className="App-icon"
+      navbtn="community"
+      onClick={[Function]}
+      src="teamwork2.svg"
+    />
+  </header>
+  <p />
+</div>
+`;

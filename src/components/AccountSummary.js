@@ -19,11 +19,6 @@ class AccountSummary extends React.Component {
     max = accounts.getMaxAccount();
     total = accounts.getAccountTotal();
 
-//    accounts.forEach(account => {
-//        min = Math.min(account.getbalance(), min);
-//        max = Math.max(account.getbalance(), max);
-//        total += account.getbalance();
-//    });
     return {
       lowest: min,
       highest: max,

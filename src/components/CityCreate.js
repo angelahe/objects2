@@ -7,7 +7,7 @@ const CityCreate = (props) => {
   console.log("props is ", props);
 
   function handleCloseClick() {
-    console.log("in handleCloseClick");
+    props.closeClicked("create");
   }
 
   function handleAddClick() {

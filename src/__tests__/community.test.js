@@ -8,10 +8,10 @@ const newCity4 = new city("Auckland", "36.8485 S", "174.7633 E", 1614000);
 
 const newCommunity = new community();
 
-newCommunity.Community.push(newCity1);
-newCommunity.Community.push(newCity2);
-newCommunity.Community.push(newCity3);
-newCommunity.Community.push(newCity4);
+newCommunity.Communities.push(newCity1);
+newCommunity.Communities.push(newCity2);
+newCommunity.Communities.push(newCity3);
+newCommunity.Communities.push(newCity4);
 
 //console.log("newCommunity with 4 cities", newCommunity);
 

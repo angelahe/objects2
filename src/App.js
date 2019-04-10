@@ -18,7 +18,7 @@ class App extends Component {
     }
 
     onNavClickChanged = (clickBtn) => {
-        console.log("in onNavClickChanged, clickbtn is", clickBtn);
+//        console.log("in onNavClickChanged, clickbtn is", clickBtn);
         this.setState({navClicked : clickBtn, message : clickBtn + " was clicked"});
     }
 

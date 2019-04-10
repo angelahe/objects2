@@ -11,21 +11,13 @@ class MathComp extends React.Component {
         }
     }
 
-    componentDidMount() {
-
-    }
-
-    componentWillUnmount() {
-
-    }
-
     handleCalculateClick = (state) => {
-        console.log("in handleCalculateClick");
+//        console.log("in handleCalculateClick");
         const input1 = Number(document.getElementById("operand1").value);
         const input2 = Number(document.getElementById("operand2").value);
         const operator = document.getElementsByName("operator")[0].value;
 
-        console.log("operator is ", operator);
+//        console.log("operator is ", operator);
         switch (operator) {
             case "plus" :
                 this.setState((state) => ({result : math.sum(input1, input2)}));

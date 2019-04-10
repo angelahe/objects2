@@ -3,21 +3,21 @@ import city from './city';
 class community {
 
   constructor() {
-    this.Community = [];
+    this.Communities = [];
   }
 
   addCommunity(name, latitude, longitude, population) {
 
     const newCommunity = new city(name, latitude, longitude, population);
-    this.Community.push(newCommunity);
+    this.Communities.push(newCommunity);
 
   }
 
   whichSphere(index) {
 
-    if (this.Community[index].Latitude.includes("N")) {
+    if (this.Communities[index].Latitude.includes("N")) {
       return ("Northern Hemisphere");
-    } else if (this.Community[index].Latitude.includes("S")) {
+    } else if (this.Communities[index].Latitude.includes("S")) {
       return ("Southern Hemisphere");
     } else {
       return ("Not of this earth");
@@ -33,13 +33,13 @@ class community {
     let mostNorthLatitude = 0;
     let nextNorthLatitude = 0;
 
-    for(let i=0; i<this.Community.length; i++ ) {
-      if (this.Community[i].Latitude.includes("N")) {
-        nextNorthLatitude = Number(this.Community[i].Latitude.slice(0, -2));
+    for(let i=0; i<this.Communities.length; i++ ) {
+      if (this.Communities[i].Latitude.includes("N")) {
+        nextNorthLatitude = Number(this.Communities[i].Latitude.slice(0, -2));
       }
       if (nextNorthLatitude > mostNorthLatitude) {
         mostNorthLatitude = nextNorthLatitude;
-        mostNorthern = this.Community[i].Name;
+        mostNorthern = this.Communities[i].Name;
       }
     }
 
@@ -52,13 +52,13 @@ class community {
     let mostSouthLatitude = 0;
     let nextSouthLatitude = 0;
 
-    for(let i=0; i<this.Community.length; i++ ) {
-      if (this.Community[i].Latitude.includes("S")) {
-        nextSouthLatitude = Number(this.Community[i].Latitude.slice(0, -2));
+    for(let i=0; i<this.Communities.length; i++ ) {
+      if (this.Communities[i].Latitude.includes("S")) {
+        nextSouthLatitude = Number(this.Communities[i].Latitude.slice(0, -2));
       }
       if (nextSouthLatitude > mostSouthLatitude) {
         mostSouthLatitude = nextSouthLatitude;
-        mostSouthern = this.Community[i].Name;
+        mostSouthern = this.Communities[i].Name;
       }
     }
 
@@ -68,7 +68,7 @@ class community {
   getPopulation() {
     //let population = 8237550;
 
-    const totalPopulation = this.Community.reduce(function (acc, obj) {return acc + obj.Population; }, 0);
+    const totalPopulation = this.Communities.reduce(function (acc, obj) {return acc + obj.Population; }, 0);
 
     return(totalPopulation);
   }
