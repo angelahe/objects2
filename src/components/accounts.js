@@ -87,15 +87,10 @@ class Accounts {
 
     getAccountTotal() {
 
-        let len = this.Accounts.length,  total = 0;
+        const totalBalance = this.Accounts.reduce(function(acc, obj) {return acc + obj.balance }, 0);
 
-        while (len--) {
-            if (this.Accounts[len].balance > 0) {
-                total+= this.Accounts[len].balance;
-            }
-        }
-
-        return(total);
+        return totalBalance;
+     
     }
 
 
