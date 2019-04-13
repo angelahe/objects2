@@ -90,7 +90,7 @@ class Accounts {
         const totalBalance = this.Accounts.reduce(function(acc, obj) {return acc + obj.balance }, 0);
 
         return totalBalance;
-     
+
     }
 
 

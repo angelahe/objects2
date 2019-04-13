@@ -25,7 +25,43 @@ class community {
 
   }
 
+//when there are no cities in the Southern Hemisphere, get the most south of the northern hemisphere
+  getMostSouthofNorth () {
+    let mostSouthern = "";
+    let nextNorthLatitude = 0;
+    let mostSouthLatitude = Infinity;
 
+    for(let i=0; i<this.Communities.length; i++) {
+      if (this.Communities[i].Latitude.includes("N")) {
+        nextNorthLatitude = Number(this.Communities[i].Latitude.slice(0, -2));
+      }
+      if(nextNorthLatitude < mostSouthLatitude) {
+        mostSouthLatitude = nextNorthLatitude;
+        mostSouthern = this.Communities[i].Name;
+      }
+    }
+    console.log("most southern is", mostSouthern);
+    return(mostSouthern);
+  }
+  //when there are no cities in the Northern Hemisphere, get the most north of the southern hemisphere
+
+  getMostNorthofSouth() {
+    let mostNorthern = "";
+    let mostNorthLatitude = Infinity;
+    let nextNorthLatitude = 0;
+
+    for(let i=0; i<this.Communities.length; i++ ) {
+      if (this.Communities[i].Latitude.includes("S")) {
+        nextNorthLatitude = Number(this.Communities[i].Latitude.slice(0, -2));
+      }
+      if (nextNorthLatitude < mostNorthLatitude) {
+        mostNorthLatitude = nextNorthLatitude;
+        mostNorthern = this.Communities[i].Name;
+      }
+    }
+
+    return(mostNorthern);
+  }
   // assume Latitude is stored as a string e.g. "51.0486 N"
   getMostNorthern() {
 
@@ -42,13 +78,17 @@ class community {
         mostNorthern = this.Communities[i].Name;
       }
     }
+    if (mostNorthern === null) {
+      console.log("have no northern hemisphere cities");
+      mostNorthern = this.getMostNorthofSouth();
+    }
 
     return(mostNorthern);
 
   }
 
   getMostSouthern() {
-    let mostSouthern = "";
+    let mostSouthern = null;
     let mostSouthLatitude = 0;
     let nextSouthLatitude = 0;
 
@@ -61,12 +101,15 @@ class community {
         mostSouthern = this.Communities[i].Name;
       }
     }
+    if (mostSouthern === null) {
+      console.log("have no southern hemisphere cities");
+      mostSouthern = this.getMostSouthofNorth();
+    }
 
     return(mostSouthern);
   }
 
   getPopulation() {
-    //let population = 8237550;
 
     const totalPopulation = this.Communities.reduce(function (acc, obj) {return acc + obj.Population; }, 0);
 
