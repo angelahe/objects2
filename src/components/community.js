@@ -13,6 +13,45 @@ class community {
 
   }
 
+  deleteCommunity(city) {
+    const index = this.Communities.findIndex(a => a.Name === city.Name);
+    if(index || index ===0) {
+      this.Communities.splice(index, 1);
+      return true;
+    }
+    else return false;
+  }
+
+  updateCommunity(city, updated) {
+    const index = this.Communities.findIndex(a => a.name === city.name);
+    if (index || index === 0) {
+      this.Communities[index] = updated;
+      return true;
+    }
+    else return false;
+
+  }
+
+  movedOut(city, number) {
+    const thisCity = this.Communities.find(a => a.Name === city.Name);
+    if (thisCity) {
+      thisCity.movedOut(number);
+      return true;
+    }
+    else
+      return false;
+  }
+
+  movedIn(city, number) {
+    const thisCity = this.Communities.find(a => a.Name === city.Name);
+    if (thisCity) {
+      thisCity.movedIn(number);
+      return true;
+    }
+    else
+      return false;
+  }
+
   whichSphere(index) {
 
     if (this.Communities[index].Latitude.includes("N")) {
@@ -111,7 +150,7 @@ class community {
 
   getPopulation() {
 
-    const totalPopulation = this.Communities.reduce(function (acc, obj) {return acc + obj.Population; }, 0);
+    const totalPopulation = this.Communities.reduce(function (acc, obj) {return acc + Number(obj.Population); }, 0);
 
     return(totalPopulation);
   }

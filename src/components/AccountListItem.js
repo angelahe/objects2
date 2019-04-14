@@ -33,8 +33,7 @@ const AccountListItem = (props) => {
 //fixing index from key to actual index idindex={props.item.acctId} to props.index
 
     return (
-        <div className="ItemBox AppListItem" elemtype = "Container" idindex={props.index}
-             onClick={handleAccountClick}>
+        <div className="ItemBox AppListItem" elemtype = "Container" onClick={handleAccountClick}>
             <span className="DetailText" elemtype = "Text">{props.account.acctName + " $" + props.account.balance}</span>
             <button className="AppBtn" elemtype = "Edit">
                 <img className="btnImg" elemtype = "Edit Image" src={editbtn} alt="Add"/>

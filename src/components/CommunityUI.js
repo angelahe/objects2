@@ -4,6 +4,7 @@ import CityCreate from './CityCreate';
 import CityEdit from './CityEdit';
 import OneCommunity from './OneCommunity';
 import CommunitySummary from './CommunitySummary';
+import CityActions from './CityActions';
 import addbtn from '../images/add_FFFFFF.png';
 
 import '../styles/Styles140.css';
@@ -15,13 +16,17 @@ class CommunityUI extends React.Component {
       CommunityList: new community(),
       currentCity: null,
       addShow: false,
-      editShow: false
+      editShow: false,
+      actionsShow: false,
+      deleteShow: false
     }
   }
 
   onBtnCloseClick = (closeType) => {
     if (closeType === "create") this.setState ({addShow: false});
     if (closeType === "edit") this.setState ({editShow: false});
+    if (closeType === "delete") this.setState ({deleteShow: false});
+    if (closeType === "actions") this.setState ({actionsShow: false});
   }
 
   onBtnAddClick = () => {
@@ -32,15 +37,35 @@ class CommunityUI extends React.Component {
     this.setState({editShow: true});
   }
 
-  onCityUpdate = (updated) => {
+  onCityClick = (city) => {
+    this.setState({
+      actionsShow: true,
+      currentCity: city
+    })
+  }
+
+  onEditClick = (city) => {
+    this.setState({
+      editShow: true,
+      currentCity: city
+    })
+  }
+
+  onDeleteClick = (city) => {
+    this.setState({
+      deleteShow: true,
+      currentCity: city
+    })
+  }
+
+  onCityUpdate = (city, updated) => {
     console.log("in city update");
-    this.state.CommunityList.updateCommunity(updated);
+    this.state.CommunityList.updateCommunity(city, updated);
 
     this.setState({
       CommunityList: this.state.CommunityList,
       editShow: false
     })
-
   }
 
 
@@ -55,10 +80,33 @@ class CommunityUI extends React.Component {
 
   }
 
+  onMovedIn = (city, number) => {
+    console.log("in moved in");
+    this.state.CommunityList.movedIn(city, number);
+
+    this.setState({
+      CommunityList: this.state.CommunityList,
+      actionsShow: false,
+    });
+  }
+
+  onMovedOut = (city, number) => {
+    console.log("in moved out");
+    this.state.CommunityList.movedOut(city, number);
+
+    this.setState({
+      CommunityList: this.state.CommunityList,
+      actionsShow: false,
+    });
+  }
+
   render() {
     const communities = this.state.CommunityList.Communities.map((city, index) =>
     <OneCommunity key = {city.Name}
                   city = {city}
+                  cityClicked={this.onCityClick}
+                  editClicked={this.onEditClick}
+                  deleteClicked={this.onDeleteClick}
     />
     );
 
@@ -94,6 +142,14 @@ class CommunityUI extends React.Component {
                 />
               : null
               }
+            {(this.state.actionsShow)
+              ? <CityActions
+                city={this.state.currentCity}
+                movedIn={this.onMovedIn}
+                movedOut={this.onMovedOut}
+              />
+              : null
+            }
           </div>
 
         </div>

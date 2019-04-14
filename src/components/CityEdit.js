@@ -15,13 +15,13 @@ const CityEdit = (props) => {
     const newLongitude = document.getElementById("longitude").value;
     const newPopulation = document.getElementById("population").value;
     let updatedCity = new city(newName, newLatitude, newLongitude, newPopulation);
-    props.closeClicked(updatedCity);
+    props.updateCity(props.city, updatedCity);
   }
 
-  const cityName = props.City.cityName;
-  const latitude = props.City.latitude;
-  const longitude = props.City.longitude;
-  const population = props.City.population;
+  const cityName = props.city.Name;
+  const latitude = props.city.Latitude;
+  const longitude = props.city.Longitude;
+  const population = props.city.Population;
 
 
   return(
@@ -35,6 +35,10 @@ const CityEdit = (props) => {
       <div className = "ItemBox">
         <span className = "DetailText">City Name:</span>
         <input className="InputText" id="cityName" defaultValue={cityName} autoFocus={true}></input><br/>
+        <span className = "DetailText">Latitude:</span>
+        <input className="InputText" id="latitude" defaultValue={latitude} autoFocus={true}></input><br/>
+        <span className = "DetailText">Longitude:</span>
+        <input className="InputText" id="longitude" defaultValue={longitude} autoFocus={true}></input><br/>
         <span className = "DetailText">Population:</span>
         <input className = "InputText" id = "population" type="number" defaultValue={population}></input><br/><br/>
         <button className="btnText" onClick={handleUpdateClick}>Update Account</button>
