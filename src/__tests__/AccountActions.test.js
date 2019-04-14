@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import AccountActions from "../components/AccountActions";
-import Accounts from "../components/accounts";
 import '../styles/Styles140.css'
 import renderer from "react-test-renderer";
 import AccountsUI from "../components/AccountsUI";

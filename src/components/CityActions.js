@@ -8,16 +8,13 @@ const CityActions = (props) => {
     props.closeClicked("actions");
   }
 
-
   function handleClick(e) {
     const amount = Number(document.getElementById("amount").value);
     switch (e.target.getAttribute("elem")) {
       case "movein":
-        console.log("movein was clicked");
         props.movedIn(props.city, amount);
         break;
       case "moveout":
-        console.log("moveout was clicked")
         props.movedOut(props.city, amount);
         break;
       default:

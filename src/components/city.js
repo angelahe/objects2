@@ -24,8 +24,6 @@ class city {
 
   howBig() {
 
-//    console.log("population is", this.Population);
-
       if (this.Population > 100000) return "City";
       if (this.Population > 20000) return "Large town";
       if (this.Population >1000) return "Town";
@@ -35,9 +33,6 @@ class city {
       //unknown size, return error
       return "Not sure how big this place is...";
   }
-
-
-
 
 }
 
