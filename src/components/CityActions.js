@@ -13,10 +13,12 @@ const CityActions = (props) => {
     const amount = Number(document.getElementById("amount").value);
     switch (e.target.getAttribute("elem")) {
       case "movein":
-        props.movedIn(amount, props.city);
+        console.log("movein was clicked");
+        props.movedIn(props.city, amount);
         break;
       case "moveout":
-        props.movedOut(amount, props.city);
+        console.log("moveout was clicked")
+        props.movedOut(props.city, amount);
         break;
       default:
       //do nothing
@@ -40,7 +42,7 @@ const CityActions = (props) => {
         </button>
       </div>
       <div className = "ItemBox" onClick={handleClick}>
-        <span className = "DetailText">For City Name:</span>
+        <span className = "DetailText">For: </span>
         <span className = "DetailText" >{cityName}</span><br/><br/>
         <span className = "DetailText">Number:</span>
         <input className = "InputText" id = "amount" placeholder="number of people" type="number"></input><br/><br/>
