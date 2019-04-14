@@ -2,6 +2,7 @@ import React from 'react';
 import community from './community';
 import CityCreate from './CityCreate';
 import CityEdit from './CityEdit';
+import CityDelete from './CityDelete';
 import OneCommunity from './OneCommunity';
 import CommunitySummary from './CommunitySummary';
 import CityActions from './CityActions';
@@ -58,6 +59,15 @@ class CommunityUI extends React.Component {
     })
   }
 
+  onCityDelete = (city) => {
+    this.state.CommunityList.deleteCity(city);
+
+    this.setState({
+      CommunityList: this.state.CommunityList,
+      deleteShow: false
+    })
+  }
+
   onCityUpdate = (city, updated) => {
     console.log("in city update");
     this.state.CommunityList.updateCommunity(city, updated);
@@ -81,7 +91,7 @@ class CommunityUI extends React.Component {
   }
 
   onMovedIn = (city, number) => {
-    console.log("in moved in");
+    console.log("in moved in number is", number);
     this.state.CommunityList.movedIn(city, number);
 
     this.setState({
@@ -91,7 +101,7 @@ class CommunityUI extends React.Component {
   }
 
   onMovedOut = (city, number) => {
-    console.log("in moved out");
+    console.log("in moved out number is", number);
     this.state.CommunityList.movedOut(city, number);
 
     this.setState({
@@ -141,6 +151,14 @@ class CommunityUI extends React.Component {
                          closeClicked={this.onBtnCloseClick}
                 />
               : null
+              }
+            {(this.state.deleteShow)
+              ? <CityDelete
+                        city={this.state.currentCity}
+                        deleteCity={this.onCityDelete}
+                        closeClicked={this.onBtnCloseClick}
+                />
+              :null
               }
             {(this.state.actionsShow)
               ? <CityActions

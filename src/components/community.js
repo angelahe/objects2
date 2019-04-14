@@ -13,7 +13,7 @@ class community {
 
   }
 
-  deleteCommunity(city) {
+  deleteCity(city) {
     const index = this.Communities.findIndex(a => a.Name === city.Name);
     if(index || index ===0) {
       this.Communities.splice(index, 1);
