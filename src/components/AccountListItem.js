@@ -6,26 +6,18 @@ import deletebtn from '../images/delete_FFFFFF.png';
 const AccountListItem = (props) => {
 
     function handleAccountClick(e) {
-        console.log("in handleclick function AccountList");
-        console.log("props is", props);
-
-        let acctIndex = NaN;
 
         switch (e.target.getAttribute("elemtype")) {
             case "Edit":
-                acctIndex = e.target.parentNode.getAttribute("idindex");
                 props.editClicked(props.account);
                 break;
             case "Delete":
-                acctIndex = e.target.parentNode.getAttribute("idindex");
-                props.deleteClicked(acctIndex);
+                props.deleteClicked(props.account);
                 break;
             case "Edit Image":
-                acctIndex = e.target.parentNode.parentNode.getAttribute("idindex");
                 props.editClicked(props.account);
                 break;
             case "Delete Image":
-                acctIndex = e.target.parentNode.parentNode.getAttribute("idindex");
                 props.deleteClicked(props.account);
                 break;
             case "Container":
