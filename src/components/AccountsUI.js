@@ -130,7 +130,6 @@ class AccountsUI extends React.Component {
 
     render() {
 
-        console.log("addAccount is ", this.state.addAccount);
         const accountListItems = this.state.AccountList.Accounts.map((item, index) =>
            <AccountListItem key={item.acctId}
                             account={item}
@@ -185,7 +184,6 @@ class AccountsUI extends React.Component {
                                               closeClicked={this.onBtnCloseClick}
                             />
                             : null }
-                        }
                     </div>
                 </div>
             </div>

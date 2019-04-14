@@ -1,10 +1,15 @@
 import React from "react";
 import linkedlist from "./linkedlist";
 import AddNode from "./AddNode";
+import DeleteNode from "./DeleteNode";
 import addbtn from '../images/add_FFFFFF.png';
 import deletebtn from '../images/delete_FFFFFF.png';
 import '../styles/Styles140.css';
-import editbtn from "../images/edit_FFFFFF.png";
+import forward from "../images/forward2_FFFFFF.png";
+import back from "../images/back2_FFFFFF.png";
+import start from "../images/start_FFFFFF.png";
+import end from "../images/end_FFFFFF.png";
+
 
 class LinkedListUI extends React.Component {
 
@@ -42,12 +47,24 @@ class LinkedListUI extends React.Component {
     this.setState ({amountAsc: !this.state.amountAsc});
   }
 
+  onSubjectDelete = (subject) => {
+    if(subject) {
+      this.state.SubjectList.deleteNode(subject);
+      const currentNode = this.state.SubjectList.head;
+
+      this.setState({
+        SubjectList: this.state.SubjectList,
+        currentNode: currentNode,
+        deleteShow: false
+      });
+    }
+  }
+
   onSubjectCreate = (subject, amount) => {
 
     if (this.state.SubjectList.length === 0) {
       this.state.SubjectList.addNode(subject, amount);
       const currentNode = this.state.SubjectList.head;
-      console.log("head is", currentNode);
 
       this.setState({
         SubjectList: this.state.SubjectList,
@@ -55,7 +72,6 @@ class LinkedListUI extends React.Component {
       });
     }
     else {
-      console.log("current node is", this.state.currentNode);
       const index = this.state.SubjectList.indexOf(this.state.currentNode.subject);
       this.state.SubjectList.insertNodeAt(index, subject, amount);
       this.setState({
@@ -66,8 +82,30 @@ class LinkedListUI extends React.Component {
     this.setState({
       addShow: false
     })
-    console.log(this.state);
 
+    }
+
+  onStartClick =() => {
+    this.setState({currentNode: this.state.SubjectList.head})
+  }
+
+  onBackClick = () => {
+    const previousNode = this.state.SubjectList.getPrevious(this.state.currentNode);
+    if (previousNode) {
+      this.setState({currentNode: previousNode});
+    }
+
+  }
+
+  onForwardClick = () => {
+    const nextNode = this.state.SubjectList.getNext(this.state.currentNode);
+    if (nextNode) {
+      this.setState({currentNode: nextNode});
+    }
+  }
+
+  onEndClick = () => {
+    this.setState({currentNode: this.state.SubjectList.tail});
   }
 
   render() {
@@ -86,17 +124,34 @@ class LinkedListUI extends React.Component {
             <div className = "AppList">
               {(this.state.currentNode !== null)
               ? <div>
-                  <h2>{this.state.currentNode.subject}</h2>
-                  <h2>{this.state.currentNode.amount}</h2>
-                  <button className="AppBtn" onClick={this.onAddClick}>
-                  <img className="btnImg" src={editbtn} alt="Add" onClick={this.onAddClick}/>
-                  </button>
-                  <button className="AppBtn Delete" onClick={this.onDeleteClick}>>
-                  <img className="btnImg" src={deletebtn} alt="Add" onClick={this.onDeleteClick}/>
-                  </button>
-                </div>
-              : null}
+                  <div>
+                    <span className="DetailText">{this.state.currentNode.subject}{"  "}</span>
+                    <span className="DetailText">{this.state.currentNode.amount}</span>
 
+                    <button className="AppBtn" onClick={this.onAddClick}>
+                      <img className="btnImg" src={addbtn} alt="Add" onClick={this.onAddClick}/>
+                    </button>
+                    <button className="AppBtn Delete" onClick={this.onDeleteClick}>
+                      <img className="btnImg" src={deletebtn} alt="Delete" onClick={this.onDeleteClick}/>
+                    </button>
+                    <hr/>
+                  </div>
+                  <div>
+                    <button className="AppBtn" onClick={this.onStartClick}>
+                      <img className="btnImg" src={start} alt="Start" onClick={this.onStartClick}/>
+                    </button>
+                    <button className="AppBtn" onClick={this.onBackClick}>
+                      <img className="btnImg" src={back} alt="Back" onClick={this.onBackClick}/>
+                    </button>
+                    <button className="AppBtn" onClick={this.onForwardClick}>
+                      <img className="btnImg" src={forward} alt="Forward" onClick={this.onForwardClick}/>
+                    </button>
+                    <button className="AppBtn" onClick={this.onEndClick}>
+                      <img className="btnImg" src={end} alt="End" onClick={this.onEndClick}/>
+                    </button>
+                  </div>
+                </div>
+              : null }
             </div>
           </div>
           <div className = "AppPanel">
@@ -104,12 +159,14 @@ class LinkedListUI extends React.Component {
             ? <AddNode createClicked = {this.onSubjectCreate}
                          closeClicked = {this.onBtnCloseClick}
               />
-            : null
-            }
+            : null }
             {(this.state.deleteShow)
-            ? <h1>show delete dialog</h1>
-            :null
-            }
+            ? <DeleteNode node = {this.state.currentNode}
+                          deleteSubject = {this.onSubjectDelete}
+                          closeClicked = {this.onBtnCloseClick}
+              />
+
+            :null }
           </div>
         </div>
       </div>
