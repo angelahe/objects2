@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e53f95e5-9c18-4842-937c-656e57be09c8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/CityActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CityActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OneCommunity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OneCommunity.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +20,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.49928468">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/city.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="390">
@@ -50,7 +50,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/CityActions.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
@@ -188,11 +188,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/OneCommunity.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+                <state relative-caret-position="390">
+                  <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -200,7 +200,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/CommunityUI.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="215">
@@ -277,8 +277,8 @@
       <find>update</find>
       <find>findindex</find>
       <find>deposit</find>
-      <find>delete</find>
       <find>get</find>
+      <find>delete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -332,12 +332,12 @@
         <option value="$PROJECT_DIR$/src/components/accounts.js" />
         <option value="$PROJECT_DIR$/src/components/AccountsUI.js" />
         <option value="$PROJECT_DIR$/src/components/AccountListItem.js" />
-        <option value="$PROJECT_DIR$/src/components/OneCommunity.js" />
         <option value="$PROJECT_DIR$/src/components/CityEdit.js" />
         <option value="$PROJECT_DIR$/src/components/CommunityUI.js" />
         <option value="$PROJECT_DIR$/src/components/community.js" />
         <option value="$PROJECT_DIR$/src/components/CityDelete.js" />
         <option value="$PROJECT_DIR$/src/components/CityActions.js" />
+        <option value="$PROJECT_DIR$/src/components/OneCommunity.js" />
       </list>
     </option>
   </component>
@@ -530,7 +530,7 @@
       <workItem from="1553101651570" duration="6863000" />
       <workItem from="1554073935112" duration="16039000" />
       <workItem from="1554649069489" duration="93087000" />
-      <workItem from="1555088963371" duration="31823000" />
+      <workItem from="1555088963371" duration="32100000" />
     </task>
     <servers />
   </component>
@@ -567,7 +567,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232120000" />
+    <option name="totallyTimeSpent" value="232397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="2238" height="1309" extended-state="0" />
@@ -952,27 +952,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/OneCommunity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/accounts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/city.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1066,6 +1049,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/city.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/OneCommunity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

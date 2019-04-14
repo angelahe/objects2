@@ -19,9 +19,12 @@ const OneCommunity = (props) => {
         console.log("unknown element clicked for city");
     }
   }
+
+  const communityType = props.city.howBig();
+
   return (
     <div className="ItemBox AppListItem" elemtype = "Container" onClick={handleAccountClick}>
-        <h2>{props.city.Name}</h2>
+        <h2>{communityType} {" of "} {props.city.Name}</h2>
         <span className="DetailText" elemtype="Text">Latitude: {props.city.Latitude}</span><br/>
         <span className="DetailText" elemtype="Text">Longitude: {props.city.Longitude}</span><br/>
         <span className="DetailText" elemtype="Text">Population: {props.city.Population}</span><br/>
