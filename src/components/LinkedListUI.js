@@ -1,5 +1,6 @@
 import React from "react";
 import linkedlist from "./linkedlist";
+import AddNode from "./AddNode";
 import addbtn from '../images/add_FFFFFF.png';
 import deletebtn from '../images/delete_FFFFFF.png';
 import '../styles/Styles140.css';
@@ -20,6 +21,11 @@ class LinkedListUI extends React.Component {
 
   }
 
+  onBtnCloseClick = (closeType) => {
+    if (closeType === "create") this.setState ({addShow: false});
+    if (closeType === "delete") this.setState ({deleteShow: false});
+  }
+
   onAddClick = () => {
     this.setState ({addShow: true});
   }
@@ -36,11 +42,10 @@ class LinkedListUI extends React.Component {
     this.setState ({amountAsc: !this.state.amountAsc});
   }
 
-  onSubjectCreate = (node) => {
+  onSubjectCreate = (subject, amount) => {
 
     if (this.state.SubjectList.length === 0) {
-      this.state.SubjectList.addNode(node.subject, node.amount);
-
+      this.state.SubjectList.addNode(subject, amount);
       this.setState({
         SubjectList: this.state.SubjectList,
         currentNode: this.state.SubjectList.head
@@ -49,12 +54,15 @@ class LinkedListUI extends React.Component {
     else {
       const index = this.state.SubjectList.indexOf(this.state.currentSubject);
       this.state.SubjectList.insertNodeAt(index);
-
       this.setState({
         SubjectList: this.state.SubjectList,
         currentNode: this.state.SubjectList.nodeAt(index)
       });
     }
+    this.setState({
+      addShow: false
+    })
+
 
   }
 
@@ -89,10 +97,9 @@ class LinkedListUI extends React.Component {
           </div>
           <div className = "AppPanel">
             {(this.state.addShow)
-            ? <div>
-                <h2>show add dialog</h2>
-                
-              </div>
+            ? <AddNode createClicked = {this.onSubjectCreate}
+                         closeClicked = {this.onBtnCloseClick}
+              />
             : null
             }
             {(this.state.deleteShow)
