@@ -148,6 +148,9 @@ class linkedlist {
 
   //inserts node before the position at index
   insertNodeAt(index, subject, amount) {
+
+    console.log("index is ", index, subject, amount);
+
     const node = new Node(subject, amount);
 
     let currentNode = this.head;

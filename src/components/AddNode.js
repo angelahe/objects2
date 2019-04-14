@@ -28,7 +28,7 @@ const AddNode = (props) => {
         <input className="InputText" id="subject" autoFocus={true}></input><br/>
         <span className = "DetailText">Amount:</span>
         <input className = "InputText" id="amount" type="number"></input><br/><br/>
-        <button className="btnText" onClick={handleAddClick}>Create Account</button>
+        <button className="btnText" onClick={handleAddClick}>Create</button>
 
       </div>
     </div>

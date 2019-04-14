@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e53f95e5-9c18-4842-937c-656e57be09c8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AddNode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddNode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddNode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LinkedListUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LinkedListUI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/linkedlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/linkedlist.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,11 +64,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/linkedlist.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-261">
-                  <caret line="96" selection-start-line="96" selection-end-line="96" />
+                <state relative-caret-position="579">
+                  <caret line="152" selection-start-line="152" selection-end-line="152" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -112,7 +112,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="297">
@@ -164,8 +164,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/LinkedListUI.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="789">
-                  <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+                <state relative-caret-position="788">
+                  <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -176,8 +176,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/AddNode.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+                <state relative-caret-position="540">
+                  <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -354,11 +354,11 @@
         <option value="$PROJECT_DIR$/src/components/city.js" />
         <option value="$PROJECT_DIR$/src/components/CityActions.js" />
         <option value="$PROJECT_DIR$/src/__tests__/AccountActions.test.js" />
-        <option value="$PROJECT_DIR$/src/components/linkedlist.js" />
         <option value="$PROJECT_DIR$/src/components/AccountsUI.js" />
         <option value="$PROJECT_DIR$/src/components/NavBar.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/AddNode.js" />
+        <option value="$PROJECT_DIR$/src/components/linkedlist.js" />
         <option value="$PROJECT_DIR$/src/components/LinkedListUI.js" />
       </list>
     </option>
@@ -552,7 +552,7 @@
       <workItem from="1553101651570" duration="6863000" />
       <workItem from="1554073935112" duration="16039000" />
       <workItem from="1554649069489" duration="93087000" />
-      <workItem from="1555088963371" duration="41358000" />
+      <workItem from="1555088963371" duration="42573000" />
     </task>
     <servers />
   </component>
@@ -589,7 +589,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241655000" />
+    <option name="totallyTimeSpent" value="242870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="2238" height="1309" extended-state="0" />
@@ -987,16 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/linkedlist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NavBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1068,10 +1058,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/linkedlist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AddNode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="540">
+          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1080,18 +1090,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LinkedListUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AccountsUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+        <state relative-caret-position="788">
+          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

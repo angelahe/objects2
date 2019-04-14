@@ -46,14 +46,18 @@ class LinkedListUI extends React.Component {
 
     if (this.state.SubjectList.length === 0) {
       this.state.SubjectList.addNode(subject, amount);
+      const currentNode = this.state.SubjectList.head;
+      console.log("head is", currentNode);
+
       this.setState({
         SubjectList: this.state.SubjectList,
-        currentNode: this.state.SubjectList.head
+        currentNode: currentNode
       });
     }
     else {
-      const index = this.state.SubjectList.indexOf(this.state.currentSubject);
-      this.state.SubjectList.insertNodeAt(index);
+      console.log("current node is", this.state.currentNode);
+      const index = this.state.SubjectList.indexOf(this.state.currentNode.subject);
+      this.state.SubjectList.insertNodeAt(index, subject, amount);
       this.setState({
         SubjectList: this.state.SubjectList,
         currentNode: this.state.SubjectList.nodeAt(index)
@@ -62,7 +66,7 @@ class LinkedListUI extends React.Component {
     this.setState({
       addShow: false
     })
-
+    console.log(this.state);
 
   }
 
