@@ -94,6 +94,7 @@ class linkedlist {
 
   //deletes the first node with a matching subject from the linked list
   //returns null if fails, returns 0 on successful deletion
+
   deleteNode(subject) {
     let currentNode = this.head;
     let previousNode;

@@ -184,12 +184,10 @@ class AccountsUI extends React.Component {
                                               withdraw={this.onWithdrawFromAccount}
                                               closeClicked={this.onBtnCloseClick}
                             />
-                            : null
+                            : null }
                         }
                     </div>
-
                 </div>
-
             </div>
         )
 

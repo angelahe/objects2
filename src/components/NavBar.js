@@ -18,7 +18,7 @@ const NavBar = (props) => {
     return (
         <div>
             <header>
-                <img src={analytics} navbtn="default" onClick={handleClick} className="App-icon" alt="one"/>
+                <img src={analytics} navbtn="linked" onClick={handleClick} className="App-icon" alt="one"/>
                 <img src={creative} navbtn="math" onClick={handleClick} className="App-icon" alt="two"/>
                 <img src={leader} navbtn="account" onClick={handleClick} className="App-icon" alt="three"/>
                 <img src={teamwork} navbtn="accounts" onClick={handleClick} className="App-icon" alt="four"/>

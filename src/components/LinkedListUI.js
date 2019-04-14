@@ -1,0 +1,110 @@
+import React from "react";
+import linkedlist from "./linkedlist";
+import addbtn from '../images/add_FFFFFF.png';
+import deletebtn from '../images/delete_FFFFFF.png';
+import '../styles/Styles140.css';
+import editbtn from "../images/edit_FFFFFF.png";
+
+class LinkedListUI extends React.Component {
+
+  constructor () {
+    super()
+    this.state = {
+      SubjectList: new linkedlist(),
+      addShow: false,
+      deleteShow: false,
+      subjectAsc: true,
+      amountAsc: true,
+      currentNode: null
+    }
+
+  }
+
+  onAddClick = () => {
+    this.setState ({addShow: true});
+  }
+
+  onDeleteClick = () => {
+    this.setState ({deleteShow: true});
+  }
+
+  onSubjectSort = () => {
+    this.setState ({subjectAsc: !this.state.subjectAsc});
+  }
+
+  onSubjectSort = () => {
+    this.setState ({amountAsc: !this.state.amountAsc});
+  }
+
+  onSubjectCreate = (node) => {
+
+    if (this.state.SubjectList.length === 0) {
+      this.state.SubjectList.addNode(node.subject, node.amount);
+
+      this.setState({
+        SubjectList: this.state.SubjectList,
+        currentNode: this.state.SubjectList.head
+      });
+    }
+    else {
+      const index = this.state.SubjectList.indexOf(this.state.currentSubject);
+      this.state.SubjectList.insertNodeAt(index);
+
+      this.setState({
+        SubjectList: this.state.SubjectList,
+        currentNode: this.state.SubjectList.nodeAt(index)
+      });
+    }
+
+  }
+
+  render() {
+
+    return(
+      <div>
+        <h1>Hello from LinkedList</h1>
+        <div className = "AppContainer">
+          <div className = "AppPanel">
+            <div className = "ItemBox AppHeader">
+              <span className = "AddItem">Add Subject</span>
+              <button className="AppBtn" onClick={this.onAddClick}>
+                <img className="btnImg" src={addbtn} alt="Add"/>
+              </button>
+            </div>
+            <div className = "AppList">
+              {(this.state.currentNode !== null)
+              ? <div>
+                  <h2>{this.state.currentNode.subject}</h2>
+                  <h2>{this.state.currentNode.amount}</h2>
+                  <button className="AppBtn" onClick={this.onAddClick}>
+                  <img className="btnImg" src={editbtn} alt="Add" onClick={this.onAddClick}/>
+                  </button>
+                  <button className="AppBtn Delete" onClick={this.onDeleteClick}>>
+                  <img className="btnImg" src={deletebtn} alt="Add" onClick={this.onDeleteClick}/>
+                  </button>
+                </div>
+              : null}
+
+            </div>
+          </div>
+          <div className = "AppPanel">
+            {(this.state.addShow)
+            ? <div>
+                <h2>show add dialog</h2>
+                
+              </div>
+            : null
+            }
+            {(this.state.deleteShow)
+            ? <h1>show delete dialog</h1>
+            :null
+            }
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+}
+
+export default LinkedListUI;
