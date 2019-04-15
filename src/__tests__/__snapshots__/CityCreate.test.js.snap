@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CityActions renders correctly 1`] = `
+<div>
+  <div
+    className="ItemBox AppHeader"
+  >
+    <span
+      className="AddItem"
+    >
+      Add City
+    </span>
+    <button
+      className="AppBtn"
+      onClick={[Function]}
+    >
+      <img
+        alt="Close"
+        className="btnImg"
+        src="close_FFFFFF.png"
+      />
+    </button>
+  </div>
+  <div
+    className="ItemBox"
+  >
+    <span
+      className="DetailText"
+    >
+      City Name:
+    </span>
+    <input
+      autoFocus={true}
+      className="InputText"
+      id="cityName"
+    />
+    <br />
+    <span
+      className="DetailText"
+    >
+      Latitude:
+    </span>
+    <input
+      autoFocus={true}
+      className="InputText"
+      id="latitude"
+    />
+    <br />
+    <span
+      className="DetailText"
+    >
+      Longitude:
+    </span>
+    <input
+      autoFocus={true}
+      className="InputText"
+      id="longitude"
+    />
+    <br />
+    <span
+      className="DetailText"
+    >
+      Population:
+    </span>
+    <input
+      className="InputText"
+      id="population"
+      type="number"
+    />
+    <br />
+    <br />
+    <button
+      className="btnText"
+      onClick={[Function]}
+    >
+      Add City
+    </button>
+  </div>
+</div>
+`;

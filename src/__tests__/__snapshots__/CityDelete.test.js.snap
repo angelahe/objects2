@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CityActions renders correctly 1`] = `
+<div>
+  <div
+    className="ItemBox AppHeader"
+  >
+    <span
+      className="AddItem"
+    >
+      Delete City
+    </span>
+    <button
+      className="AppBtn"
+      onClick={[Function]}
+    >
+      <img
+        alt="Close"
+        className="btnImg"
+        src="close_FFFFFF.png"
+      />
+    </button>
+  </div>
+  <div
+    className="ItemBox"
+  >
+    <span
+      className="DetailText"
+    >
+      City Name:
+    </span>
+    <span
+      className="DetailText"
+    >
+      Calgary
+    </span>
+    <br />
+    <span
+      className="DetailText"
+    >
+      Latitude:
+    </span>
+    <span
+      className="DetailText"
+    >
+      100 N
+    </span>
+    <br />
+    <span
+      className="DetailText"
+    >
+      Longitude:
+    </span>
+    <span
+      className="DetailText"
+    >
+      100 W
+    </span>
+    <br />
+    <span
+      className="DetailText"
+    >
+      Population: 
+    </span>
+    <span
+      className="DetailText"
+    >
+      1000000
+    </span>
+    <br />
+    <button
+      className="btnText"
+      onClick={[Function]}
+    >
+      Delete City
+    </button>
+  </div>
+</div>
+`;
