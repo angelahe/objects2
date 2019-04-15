@@ -6,6 +6,7 @@ import AccountUI from './components/AccountUI';
 import AccountsUI from './components/AccountsUI';
 import CommunityUI from './components/CommunityUI';
 import LinkedListUI from './components/LinkedListUI';
+import QueueUI from './components/QueueUI';
 
 import NavBar from './components/NavBar';
 
@@ -34,7 +35,7 @@ class App extends Component {
                 {(this.state.navClicked==="accounts") ? <AccountsUI /> : null}
                 {(this.state.navClicked==="community") ? <CommunityUI/> : null}
                 {(this.state.navClicked==="linked") ? <LinkedListUI /> : null}
-                {(this.state.navClicked==="queue") ? <CommunityUI/> : null}
+                {(this.state.navClicked==="queue") ? <QueueUI /> : null}
             </div>
         );
     }
