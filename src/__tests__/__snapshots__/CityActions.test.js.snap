@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AccountActions renders correctly 1`] = `
+exports[`CityActions renders correctly 1`] = `
 <div>
   <div
     className="ItemBox AppHeader"
@@ -8,13 +8,22 @@ exports[`AccountActions renders correctly 1`] = `
     <span
       className="AddItem"
     >
-      Savings
+      Calgary
     </span>
     <span
       className="AddItem"
     >
-      $
-      1000
+      1000000
+    </span>
+    <span
+      className="AddItem"
+    >
+      100 N
+    </span>
+    <span
+      className="AddItem"
+    >
+      100 W
     </span>
     <button
       className="AppBtn"
@@ -34,39 +43,39 @@ exports[`AccountActions renders correctly 1`] = `
     <span
       className="DetailText"
     >
-      For Account Name:
+      For: 
     </span>
     <span
       className="DetailText"
     >
-      Savings
+      Calgary
     </span>
     <br />
     <br />
     <span
       className="DetailText"
     >
-      Amount:
+      Number:
     </span>
     <input
       className="InputText"
       id="amount"
-      placeholder="Enter an amount"
+      placeholder="number of people"
       type="number"
     />
     <br />
     <br />
     <button
       className="btnText"
-      elem="deposit"
+      elem="movein"
     >
-      Deposit
+      Moved In
     </button>
     <button
       className="btnText"
-      elem="withdraw"
+      elem="moveout"
     >
-      Withdraw
+      Moved Out
     </button>
   </div>
 </div>

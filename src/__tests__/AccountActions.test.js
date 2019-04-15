@@ -29,7 +29,7 @@ it('renders without crashing', () => {
           />);
 });
 
-test('AccountUI renders correctly', () => {
+test('AccountActions renders correctly', () => {
   const tree = renderer.create(<AccountActions account={account}
                                                deposit={props.onDepositToAccount}
                                                withdraw={props.onWithdrawFromAccount}

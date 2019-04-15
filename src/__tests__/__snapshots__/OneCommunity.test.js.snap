@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Starter renders correctly 1`] = `
+<div
+  className="ItemBox AppListItem"
+  elemtype="Container"
+  onClick={[Function]}
+>
+  <h2>
+    City
+     
+     of 
+     
+    Calgary
+  </h2>
+  <span
+    className="DetailText"
+    elemtype="Text"
+  >
+    Latitude: 
+    100 N
+  </span>
+  <br />
+  <span
+    className="DetailText"
+    elemtype="Text"
+  >
+    Longitude: 
+    100 W
+  </span>
+  <br />
+  <span
+    className="DetailText"
+    elemtype="Text"
+  >
+    Population: 
+    1000000
+  </span>
+  <br />
+  <button
+    className="AppBtn"
+    elemtype="Edit"
+  >
+    <img
+      alt="Add"
+      className="btnImg"
+      elemtype="Edit"
+      src="edit_FFFFFF.png"
+    />
+  </button>
+  <button
+    className="AppBtn Delete"
+    elemtype="Delete"
+  >
+    <img
+      alt="Add"
+      className="btnImg"
+      elemtype="Delete"
+      src="delete_FFFFFF.png"
+    />
+  </button>
+  <hr />
+</div>
+`;

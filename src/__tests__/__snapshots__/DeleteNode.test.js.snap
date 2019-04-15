@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AccountActions renders correctly 1`] = `
+exports[`Starter renders correctly 1`] = `
 <div>
   <div
     className="ItemBox AppHeader"
@@ -8,13 +8,7 @@ exports[`AccountActions renders correctly 1`] = `
     <span
       className="AddItem"
     >
-      Savings
-    </span>
-    <span
-      className="AddItem"
-    >
-      $
-      1000
+      Delete Account
     </span>
     <button
       className="AppBtn"
@@ -29,44 +23,34 @@ exports[`AccountActions renders correctly 1`] = `
   </div>
   <div
     className="ItemBox"
-    onClick={[Function]}
   >
     <span
       className="DetailText"
     >
-      For Account Name:
+      Subject:
     </span>
     <span
       className="DetailText"
     >
-      Savings
+      Kitten
     </span>
-    <br />
     <br />
     <span
       className="DetailText"
     >
-      Amount:
+      Amount: 
     </span>
-    <input
-      className="InputText"
-      id="amount"
-      placeholder="Enter an amount"
-      type="number"
-    />
-    <br />
+    <span
+      className="DetailText"
+    >
+      100
+    </span>
     <br />
     <button
       className="btnText"
-      elem="deposit"
+      onClick={[Function]}
     >
-      Deposit
-    </button>
-    <button
-      className="btnText"
-      elem="withdraw"
-    >
-      Withdraw
+      Delete
     </button>
   </div>
 </div>
