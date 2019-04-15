@@ -5,6 +5,9 @@
 .App-icon {
   width: 100px;
   height: 100px;
+  background-color: #1aa3ff;
+  padding: 3px;
+  margin: 10px;
 }
 
 .App-logo {
