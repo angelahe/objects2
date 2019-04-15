@@ -130,7 +130,7 @@ class AccountsUI extends React.Component {
 
     render() {
 
-        const accountListItems = this.state.AccountList.Accounts.map((item, index) =>
+        const accountListItems = this.state.AccountList.Accounts.map((item) =>
            <AccountListItem key={item.acctId}
                             account={item}
                             accountClicked={this.onAccountClick}

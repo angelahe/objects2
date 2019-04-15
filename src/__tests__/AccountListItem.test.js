@@ -12,13 +12,9 @@ const item = {acctId : 1,
               acctName: "Savings",
               balance: 1000};
 
-const index = 1;
-
-
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<AccountListItem key={item.acctId}
-                                   index = {index}
                                    account={item}
                                    accountClicked={props.onAccountClick}
                                    editClicked={props.onEditClick}
@@ -29,7 +25,6 @@ it('renders without crashing', () => {
 
 it('renders without crashing', () => {
   shallow(<AccountListItem key={item.acctId}
-                           index = {index}
                            account={item}
                            accountClicked={props.onAccountClick}
                            editClicked={props.onEditClick}
@@ -39,7 +34,6 @@ it('renders without crashing', () => {
 
 test('AccountUI renders correctly', () => {
   const tree = renderer.create(<AccountListItem key={item.acctId}
-                                                index = {index}
                                                 account={item}
                                                 accountClicked={props.onAccountClick}
                                                 editClicked={props.onEditClick}

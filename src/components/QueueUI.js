@@ -1,6 +1,8 @@
 import React from "react";
 import LIFOqueue from "./LIFOqueue";
 import FIFOqueue from "./FIFOqueue";
+import QueueItem from "./QueueItem";
+
 import '../styles/Styles140.css';
 import addbtn from '../images/add_FFFFFF.png';
 import forward from "../images/forward2_FFFFFF.png";
@@ -17,10 +19,60 @@ class QueueUI extends React.Component {
     }
   }
 
+  onBtnAdd1Click = () => {
+    const name = document.getElementById("queue1name").value;
+    console.log("add to this queue ", name);
+    this.state.queue1.addToQueue(name);
+    this.setState({queue1: this.state.queue1});
+    document.getElementById("queue1name").value = "";
+  }
+
+  onBtnAdd2Click = () => {
+    const name = document.getElementById("queue2name").value;
+    console.log("add to 2nd queue ", name);
+    this.state.queue2.addToQueue(name);
+    this.setState({queue2: this.state.queue2});
+    document.getElementById("queue2name").value = "";
+  }
+
   render() {
+
+    const queue1items = this.state.queue1.queue.map((person) =>
+      <QueueItem key={person} person={person}/>
+    );
+    const queue2items = this.state.queue2.queue.map((person) =>
+      <QueueItem key={person} person={person}/>
+    );
+
     return(
       <div>
         <h1>Hello from LIFO and FIFO</h1>
+        <div className = "AppContainer">
+          <div className = "AppPanel">
+            <div className = "ItemBox AppHeader">
+              <span className = "AddItem">Add to Queue</span>
+              <input className="InputText" id="queue1name" placeholder="next into queue"></input><br/>
+              <button className="AppBtn" onClick={this.onBtnAdd1Click}>
+                <img className="btnImg" src={addbtn} alt="Add"/>
+              </button>
+            </div>
+            <div className = "AppList">
+              {queue1items}
+            </div>
+        </div>
+          <div className = "AppPanel">
+            <div className = "ItemBox AppHeader">
+              <span className = "AddItem">Add to Queue</span>
+              <input className="InputText" id="queue2name" placeholder="next into queue"></input><br/>
+              <button className="AppBtn" onClick={this.onBtnAdd2Click}>
+                <img className="btnImg" src={addbtn} alt="Add"/>
+              </button>
+            </div>
+            <div className = "AppList">
+              {queue2items}
+            </div>
+          </div>
+        </div>
       </div>
     )
   }
