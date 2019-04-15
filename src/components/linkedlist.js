@@ -80,6 +80,7 @@ class linkedlist {
     if(this.head===null) {
       this.head = node;
       this.tail = node;
+      this.current = node;
     }
     else {
       let currentNode = this.head;

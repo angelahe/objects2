@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MathComp renders correctly 1`] = `
+exports[`Starter renders correctly 1`] = `
 <header
   className="App-header"
 >

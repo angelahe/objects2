@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Starter renders correctly 1`] = `
+<div>
+  <div
+    className="ItemBox AppHeader"
+  >
+    <span
+      className="AddItem"
+    >
+      Add Subject
+    </span>
+    <button
+      className="AppBtn"
+      onClick={[Function]}
+    >
+      <img
+        alt="Close"
+        className="btnImg"
+        src="close_FFFFFF.png"
+      />
+    </button>
+  </div>
+  <div
+    className="ItemBox"
+  >
+    <span
+      className="DetailText"
+    >
+      Subject:
+    </span>
+    <input
+      autoFocus={true}
+      className="InputText"
+      id="subject"
+    />
+    <br />
+    <span
+      className="DetailText"
+    >
+      Amount:
+    </span>
+    <input
+      className="InputText"
+      id="amount"
+      type="number"
+    />
+    <br />
+    <br />
+    <button
+      className="btnText"
+      onClick={[Function]}
+    >
+      Create
+    </button>
+  </div>
+</div>
+`;

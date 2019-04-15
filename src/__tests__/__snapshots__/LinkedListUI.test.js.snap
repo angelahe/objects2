@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkedList renders correctly 1`] = `
+<div>
+  <h1>
+    Hello from LinkedList
+  </h1>
+  <div
+    className="AppContainer"
+  >
+    <div
+      className="AppPanel"
+    >
+      <div
+        className="ItemBox AppHeader"
+      >
+        <span
+          className="AddItem"
+        >
+          Add Subject
+        </span>
+        <button
+          className="AppBtn"
+          onClick={[Function]}
+        >
+          <img
+            alt="Add"
+            className="btnImg"
+            src="add_FFFFFF.png"
+          />
+        </button>
+      </div>
+      <div
+        className="AppList"
+      />
+    </div>
+    <div
+      className="AppPanel"
+    />
+  </div>
+</div>
+`;

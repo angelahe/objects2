@@ -23,7 +23,7 @@ describe('Test linked list class', function() {
       list.addNode("Kitten", 100);
       expect(list.head).toEqual({"amount": 100, "next": null, "subject": "Kitten"});
       expect(list.tail).toEqual({"amount": 100, "next": null, "subject": "Kitten"});
-      expect(list.next).toEqual(null);
+      expect(list.current).toEqual({"amount": 100, "next": null, "subject": "Kitten"});
       expect(list.length).toBe(1);
     });
     it('test list - head, tail, next, previous',  () => {

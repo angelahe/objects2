@@ -4,39 +4,53 @@ exports[`MathComp renders correctly 1`] = `
 <div>
   <header>
     <img
-      alt="one"
+      alt="react"
       className="App-icon"
       navbtn="default"
       onClick={[Function]}
-      src="analytics.svg"
+      src="react_FFFFFF.png"
     />
     <img
-      alt="two"
+      alt="calculate"
       className="App-icon"
       navbtn="math"
       onClick={[Function]}
-      src="creative.svg"
+      src="calculate_FFFFFF.png"
     />
     <img
-      alt="three"
+      alt="account"
       className="App-icon"
       navbtn="account"
       onClick={[Function]}
-      src="leader.svg"
+      src="account_FFFFFF.png"
     />
     <img
-      alt="four"
+      alt="accounts"
       className="App-icon"
       navbtn="accounts"
       onClick={[Function]}
-      src="teamwork.svg"
+      src="accounts2_FFFFFF.png"
     />
     <img
-      alt="five"
+      alt="city"
       className="App-icon"
       navbtn="community"
       onClick={[Function]}
-      src="teamwork2.svg"
+      src="city_FFFFFF.png"
+    />
+    <img
+      alt="linked list"
+      className="App-icon"
+      navbtn="linked"
+      onClick={[Function]}
+      src="link_FFFFFF.png"
+    />
+    <img
+      alt="queue"
+      className="App-icon"
+      navbtn="queue"
+      onClick={[Function]}
+      src="queue_FFFFFF.png"
     />
   </header>
   <p />

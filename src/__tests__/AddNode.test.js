@@ -1,20 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
-import Starter from "../components/Starter";
+import AddNode from "../components/AddNode";
 import renderer from "react-test-renderer";
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Starter />, div);
+  ReactDOM.render(<AddNode />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
 it('renders without crashing', () => {
-  shallow(<Starter />);
+  shallow(<AddNode />);
 });
 
 test('Starter renders correctly', () => {
-  const tree = renderer.create(<Starter />).toJSON();
+  const tree = renderer.create(<AddNode />).toJSON();
   expect(tree).toMatchSnapshot();
 });

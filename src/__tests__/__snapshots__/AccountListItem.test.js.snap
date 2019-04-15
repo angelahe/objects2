@@ -4,7 +4,6 @@ exports[`AccountUI renders correctly 1`] = `
 <div
   className="ItemBox AppListItem"
   elemtype="Container"
-  idindex={1}
   onClick={[Function]}
 >
   <span
