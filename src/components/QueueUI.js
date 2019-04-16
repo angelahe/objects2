@@ -35,6 +35,17 @@ class QueueUI extends React.Component {
     document.getElementById("queue2name").value = "";
   }
 
+  onNextQueue1Click = () => {
+    const nextFromQueue = this.state.queue1.popFromQueue();
+    this.setState({queue1out: nextFromQueue });
+
+  }
+
+  onNextQueue2Click = () => {
+    const nextFromQueue = this.state.queue2.firstFromQueue();
+    this.setState({queue2out: nextFromQueue});
+  }
+
   render() {
 
     const queue1items = this.state.queue1.queue.map((person) =>
@@ -49,6 +60,7 @@ class QueueUI extends React.Component {
         <h1>Hello from LIFO and FIFO</h1>
         <div className = "AppContainer">
           <div className = "AppPanel">
+            <h2>LIFO Queue</h2>
             <div className = "ItemBox AppHeader">
               <span className = "AddItem">Add to Queue</span>
               <input className="InputText" id="queue1name" placeholder="next into queue"></input><br/>
@@ -59,8 +71,16 @@ class QueueUI extends React.Component {
             <div className = "AppList">
               {queue1items}
             </div>
+            <div className = "ItemBox AppHeader">
+              <span className = "AddItem">Pull from Queue:</span>
+              <span className = "AddItem">{this.state.queue1out}</span><br/>
+              <button className="AppBtn" onClick={this.onNextQueue1Click}>
+                <img className="btnImg" src={forward} alt="Add"/>
+              </button>
+            </div>
         </div>
           <div className = "AppPanel">
+            <h2>FIFO queue</h2>
             <div className = "ItemBox AppHeader">
               <span className = "AddItem">Add to Queue</span>
               <input className="InputText" id="queue2name" placeholder="next into queue"></input><br/>
@@ -70,6 +90,13 @@ class QueueUI extends React.Component {
             </div>
             <div className = "AppList">
               {queue2items}
+            </div>
+            <div className = "ItemBox AppHeader">
+              <span className = "AddItem">Pull from Queue:</span>
+              <span className = "AddItem">{this.state.queue2out}</span><br/>
+              <button className="AppBtn" onClick={this.onNextQueue2Click}>
+                <img className="btnImg" src={forward} alt="Add"/>
+              </button>
             </div>
           </div>
         </div>

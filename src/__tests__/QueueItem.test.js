@@ -22,7 +22,7 @@ it('renders without crashing', () => {
   />);
 });
 
-test('AccountUI renders correctly', () => {
+test('QueueItem renders correctly', () => {
   const tree = renderer.create(<QueueItem key={person}
                                           person = {person}
   />).toJSON();

@@ -11,6 +11,9 @@ exports[`LinkedList renders correctly 1`] = `
     <div
       className="AppPanel"
     >
+      <h2>
+        LIFO Queue
+      </h2>
       <div
         className="ItemBox AppHeader"
       >
@@ -39,10 +42,38 @@ exports[`LinkedList renders correctly 1`] = `
       <div
         className="AppList"
       />
+      <div
+        className="ItemBox AppHeader"
+      >
+        <span
+          className="AddItem"
+        >
+          Pull from Queue:
+        </span>
+        <span
+          className="AddItem"
+        >
+          
+        </span>
+        <br />
+        <button
+          className="AppBtn"
+          onClick={[Function]}
+        >
+          <img
+            alt="Add"
+            className="btnImg"
+            src="forward2_FFFFFF.png"
+          />
+        </button>
+      </div>
     </div>
     <div
       className="AppPanel"
     >
+      <h2>
+        FIFO queue
+      </h2>
       <div
         className="ItemBox AppHeader"
       >
@@ -71,6 +102,31 @@ exports[`LinkedList renders correctly 1`] = `
       <div
         className="AppList"
       />
+      <div
+        className="ItemBox AppHeader"
+      >
+        <span
+          className="AddItem"
+        >
+          Pull from Queue:
+        </span>
+        <span
+          className="AddItem"
+        >
+          
+        </span>
+        <br />
+        <button
+          className="AppBtn"
+          onClick={[Function]}
+        >
+          <img
+            alt="Add"
+            className="btnImg"
+            src="forward2_FFFFFF.png"
+          />
+        </button>
+      </div>
     </div>
   </div>
 </div>

@@ -15,7 +15,9 @@ class community {
 
   deleteCity(city) {
     const index = this.Communities.findIndex(a => a.Name === city.Name);
-    if(index || index ===0) {
+    console.log("index is ", index);
+    if (index === -1) return false;
+    if(index || index === 0) {
       this.Communities.splice(index, 1);
       return true;
     }
@@ -24,6 +26,8 @@ class community {
 
   updateCommunity(city, updated) {
     const index = this.Communities.findIndex(a => a.name === city.name);
+    //return false if city is not found
+    if (index === -1) return false;
     if (index || index === 0) {
       this.Communities[index] = updated;
       return true;
@@ -98,13 +102,13 @@ class community {
         mostNorthern = this.Communities[i].Name;
       }
     }
-
+    console.log("most northern is", mostNorthern);
     return(mostNorthern);
   }
   // assume Latitude is stored as a string e.g. "51.0486 N"
   getMostNorthern() {
 
-    let mostNorthern = "";
+    let mostNorthern = null;
     let mostNorthLatitude = 0;
     let nextNorthLatitude = 0;
 
